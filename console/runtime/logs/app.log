@@ -1,0 +1,66 @@
+2017-11-22 22:29:35 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request "migrtae". in C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrtae', Array)
+#1 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrtae', Array)
+#2 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 C:\xampp\htdocs\yii_training_advanced\yii(27): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "migrtae". in C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrtae', Array)
+#1 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 C:\xampp\htdocs\yii_training_advanced\yii(27): yii\base\Application->run()
+#3 {main}
+2017-11-22 22:29:32 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\jurikaca\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'ADMINRG-L2UI9G1'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\jurikaca'
+    'LOCALAPPDATA' => 'C:\\Users\\jurikaca\\AppData\\Local'
+    'LOGONSERVER' => '\\\\ADMINRG-L2UI9G1'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\jurikaca\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\PuTTY\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\xampp\\php\\;C:\\Users\\jurikaca\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\jurikaca\\AppData\\Roaming\\npm;'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3a09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\jurikaca\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\jurikaca\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'ADMINRG-L2UI9G1'
+    'USERDOMAIN_ROAMINGPROFILE' => 'ADMINRG-L2UI9G1'
+    'USERNAME' => 'jurikaca'
+    'USERPROFILE' => 'C:\\Users\\jurikaca'
+    'windir' => 'C:\\WINDOWS'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1511386169.6275
+    'REQUEST_TIME' => 1511386169
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrtae'
+    ]
+    'argc' => 2
+]
