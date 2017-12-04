@@ -10,7 +10,10 @@ use yii\widgets\ActiveForm;
 
 <div class="companies-form">
 
-    <?php $form = ActiveForm::begin(['options' => ['multipart/form-data']]); ?>
+    <?php $form = ActiveForm::begin([
+        'options' => ['multipart/form-data'],
+        'enableAjaxValidation' => true
+    ]); ?>
 
     <?= $form->field($model, 'company_name')->textInput(['maxlength' => true]) ?>
 
@@ -21,6 +24,16 @@ use yii\widgets\ActiveForm;
     <?= $form->field($model, 'file')->fileInput() ?>
 
     <?= $form->field($model, 'company_status')->dropDownList([ 'active' => 'Active', 'inactive' => 'Inactive', ], ['prompt' => 'Status']) ?>
+
+    <!--    Create branch for this component-->
+
+    <?= $form->field($branch, 'branch_name')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($branch, 'branch_address')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($branch, 'branch_status')->dropDownList([ 'active' => 'Active', 'inactive' => 'Inactive', ], ['prompt' => 'Status']) ?>
+
+
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>

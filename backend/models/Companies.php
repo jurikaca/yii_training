@@ -41,6 +41,7 @@ class Companies extends \yii\db\ActiveRecord
             [['company_status'], 'string'],
             [['company_name', 'company_email'], 'string', 'max' => 64],
             [['logo'], 'string', 'max' => 255],
+            [['file'], 'image', 'minWidth' => '1024', 'minHeight' => '1024'],
             [['company_address'], 'string', 'max' => 255],
         ];
     }

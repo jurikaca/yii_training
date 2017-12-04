@@ -22,11 +22,11 @@ class SiteController extends Controller
                 'class' => AccessControl::className(),
                 'rules' => [
                     [
-                        'actions' => ['login', 'error'],
+                        'actions' => ['login', 'error', 'language'],
                         'allow' => true,
                     ],
                     [
-                        'actions' => ['logout', 'index'],
+                        'actions' => ['logout', 'index','set-cookie','show-cookie'],
                         'allow' => true,
                         'roles' => ['@'],
                     ],
@@ -35,7 +35,7 @@ class SiteController extends Controller
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
-                    'logout' => ['post'],
+//                    'logout' => ['post'],
                 ],
             ],
         ];
@@ -53,6 +53,26 @@ class SiteController extends Controller
         ];
     }
 
+    public function beforeAction($action) {
+        $this->enableCsrfValidation = false;
+        return parent::beforeAction($action);
+    }
+
+    public function actionSetCookie(){
+        $cookie = new yii\web\Cookie([ // create a cookie object
+            'name'  =>  'test',
+            'value' => 'test value'
+        ]);
+
+        Yii::$app->getResponse()->getCookies()->add($cookie); // add the cookie
+    }
+
+    public function actionShowCookie(){
+        if(Yii::$app->getRequest()->getCookies()->has('test')){ // check if the cookie with name 'test' exists
+            print_r(Yii::$app->getRequest()->getCookies()->getValue('test')); // print the cookie with name 'test'
+        }
+    }
+
     /**
      * Displays homepage.
      *
@@ -60,6 +80,9 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
+        // the comments below are examples of using a component
+        //$lkrValue = Yii::$app->MyComponent->currencyConvert('USD' , 'EUR' , 100);
+        //print_r($lkrValue);
         return $this->render('index');
     }
 
@@ -70,6 +93,8 @@ class SiteController extends Controller
      */
     public function actionLogin()
     {
+        $this->layout = 'loginLayout'; // loading another layout for login page 'backend/views/layouts/loginLayout'
+
         if (!Yii::$app->user->isGuest) {
             return $this->goHome();
         }
@@ -81,6 +106,18 @@ class SiteController extends Controller
             return $this->render('login', [
                 'model' => $model,
             ]);
+        }
+    }
+
+    public function actionLanguage(){
+        if(isset($_POST['lang'])){
+            Yii::$app->language = $_POST['lang'];
+            $cookie = new yii\web\Cookie([
+                'name' => 'lang',
+                'value' => $_POST['lang']
+            ]);
+
+            Yii::$app->getResponse()->getCookies()->add($cookie);
         }
     }
 

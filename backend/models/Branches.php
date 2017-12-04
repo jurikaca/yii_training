@@ -38,6 +38,17 @@ class Branches extends \yii\db\ActiveRecord
             [['branch_created_date'], 'safe'],
             [['branch_status'], 'string'],
             [['branch_name'], 'string', 'max' => 64],
+            ['branch_name','unique'],
+            ['branch_status','required','when' => function($model){
+                return (!empty($model->branch_address) ? true : false); // server side validation, if address is empty the make status required (conditional validation)
+            }, 'whenClient' => // the validation on client side
+                "function(){
+                    if($('#branch_address').val() === 'undefined'){
+                        false;
+                    }else{
+                        true;
+                    }
+            }"],
             [['branch_address'], 'string', 'max' => 255],
             [['companies_company_id'], 'exist', 'skipOnError' => true, 'targetClass' => Companies::className(), 'targetAttribute' => ['companies_company_id' => 'company_id']],
         ];

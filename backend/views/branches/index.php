@@ -1,10 +1,11 @@
 <?php
 
 use yii\helpers\Html;
-use yii\grid\GridView;
+use kartik\grid\GridView;
 use yii\widgets\Pjax;
 use yii\bootstrap\Modal;
 use yii\helpers\Url;
+use kartik\export\ExportMenu;
 
 /* @var $this yii\web\View */
 /* @var $searchModel backend\models\BranchesSearch */
@@ -14,6 +15,12 @@ $this->title = 'Branches';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="branches-index">
+
+    <?php
+    // the variable settled here can be used on the layout view
+    // $this->params['data'] = 'this is a string created on the view file, and printed on layout view';
+    // we can use $this->blocks for big amount of data
+    ?>
 
     <h1><?= Html::encode($this->title) ?></h1>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
@@ -34,10 +41,27 @@ $this->params['breadcrumbs'][] = $this->title;
         Modal::end();
     ?>
 
-    <?php Pjax::begin();?>
+    <?php
+    $gridColumns = [
+        'id',
+        'branch_name',
+        'branch_address',
+        'branch_created_date',
+        'branch_status',
+    ];
+
+    echo ExportMenu::widget([
+        'dataProvider'  =>  $dataProvider,
+        'columns'       =>  $gridColumns
+    ]);
+
+    ?>
+
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
+        'pjax' => true,
+        'export' => false,
         'rowOptions' => function($model){
             if($model->branch_status == 'inactive'){
                 return ['class' => 'danger'];
@@ -52,7 +76,11 @@ $this->params['breadcrumbs'][] = $this->title;
                 'attribute'     =>  'companies_company_id',
                 'value'         =>  'companiesCompany.company_name'
             ],
-            'branch_name',
+            [
+                'class' => 'kartik\grid\EditableColumn',
+                'header' => 'BRANCH',
+                'attribute' => 'branch_name'
+            ],
             'branch_address',
             'branch_created_date',
             // 'branch_status',
@@ -60,5 +88,4 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>
-    <?php Pjax::end();?>
 </div>

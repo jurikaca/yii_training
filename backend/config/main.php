@@ -12,11 +12,41 @@ return [
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log'],
     'modules' => [
+        'gridview' => [
+            'class' => '\kartik\grid\Module',
+        ],
         'settings' => [
             'class' => 'backend\modules\settings\Settings',
         ],
     ],
     'components' => [
+//        'i18n' => [ // configuration for translations
+//            'translations' => [
+//                'app' => [
+//                    'class' => 'yii\i18n\PhpMessageSource',
+//                    //'basePath' => '@app/messages', // this is the default path for translated files, uncomment if you change
+//                    'sourceLanguage' => 'en',
+//                    'fileMap' => [
+//                        'app' => 'app.php',
+//                        'app/error' => 'error.php'
+//                    ]
+//                ]
+//            ],
+//        ],
+        // there 2 tables on db message (string translated on a specific language) & source_message (containing string to be translated)
+        'i18n' => [ // configuration for db translations
+            'translations' => [
+                'app' => [
+                    'class' => 'yii\i18n\DbMessageSource',
+                    //'basePath' => '@app/messages', // this is the default path for translated files, uncomment if you change
+                    'sourceLanguage' => 'en',
+//                    'fileMap' => [
+//                        'app' => 'app.php',
+//                        'app/error' => 'error.php'
+//                    ]
+                ]
+            ],
+        ],
         'request' => [
             'csrfParam' => '_csrf-backend',
         ],
@@ -49,6 +79,9 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
+        'MyComponent' => [
+            'class' => 'backend\components\MyComponent'
+        ]
         /*
         'urlManager' => [
             'enablePrettyUrl' => true,
@@ -57,6 +90,9 @@ return [
             ],
         ],
         */
+    ],
+    'as beforRequest' => [ // component for before request event, to check if user is logged in
+        'class' => 'backend\components\CheckIfLoggedIn',
     ],
     'params' => $params,
 ];

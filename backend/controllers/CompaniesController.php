@@ -10,6 +10,7 @@ use yii\web\NotFoundHttpException;
 use yii\web\ForbiddenHttpException;
 use yii\filters\VerbFilter;
 use yii\web\UploadedFile;
+use backend\models\Branches;
 
 /**
  * CompaniesController implements the CRUD actions for Companies model.
@@ -66,24 +67,32 @@ class CompaniesController extends Controller
     public function actionCreate()
     {
         $model = new Companies();
+        $branch = new Branches();
 
         if(Yii::$app->user->can('create-company')){
-            if ( $model->load(Yii::$app->request->post()) ) {
+            if ( $model->load(Yii::$app->request->post()) && $branch->load(Yii::$app->request->post()) ) {
 
                 //get instance of uploaded file
                 $imageName = $model->company_name;
-                $model->file = UploadedFile::getInstance($model,'file');
-                $model->file->saveAs('uploads/'.$imageName.'.'.$model->file->extension);
+                if(!empty($model->file)){
+                    $model->file = UploadedFile::getInstance($model,'file');
+                    $model->file->saveAs('uploads/'.$imageName.'.'.$model->file->extension);
 
-                // save image name in db
-                $model->logo = 'uploads/'.$imageName.'.'.$model->file->extension;
-
+                    // save image name in db
+                    $model->logo = 'uploads/'.$imageName.'.'.$model->file->extension;
+                }
                 $model->company_created_date = date('Y-m-d h:m:s');
                 $model->save();
+
+                $branch->companies_company_id = $model->company_id;
+                $branch->branch_created_date = date('Y-m-d H:m:s');
+                $branch->save();
+
                 return $this->redirect(['view', 'id' => $model->company_id]);
             } else {
                 return $this->render('create', [
-                    'model' => $model,
+                    'model'     =>  $model,
+                    'branch'    =>  $branch
                 ]);
             }
         }else{
