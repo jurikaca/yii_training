@@ -10649,3 +10649,77 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1512418571.068
     'REQUEST_TIME' => 1512418571
 ]
+2017-12-05 18:49:30 [::1][1][l8dlsb0hojt48o1eufp7v200hb][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: branches/Get_db2 in C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\Controller.php:128
+Stack trace:
+#0 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('Get_db2', Array)
+#1 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('branches/Get_db...', Array)
+#2 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\xampp\htdocs\yii_training_advanced\backend\web\index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\yii_training_advanced\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-12-05 18:49:30 [::1][1][l8dlsb0hojt48o1eufp7v200hb][info][application] $_GET = [
+    'r' => 'branches/Get_db2'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'cmaponmf4tmhc382dvjkhr0gbl'
+    '_csrf-frontend' => 'd26fc9688a3106680a44036dbb1a2cbf642e1cdd8eb8a3049c08d0552de0bb40a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"Lvin62NIIy4yqd8A5-BL18hYJ8IU8l1n\";}'
+    'advanced-backend' => 'l8dlsb0hojt48o1eufp7v200hb'
+    '_csrf-backend' => '7d42803990f0fe514c89c981793525be252b457ba184299bddae643452f60d36a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"qjPcmSvf4quoDY6Nv07sHHz1uwSQdnku\";}'
+    '_identity-backend' => '85fb58f64eda9bdd355fc89b79b2b4117e2de54df9fc1d02ec017023ce70e587a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"Yo7xBU-3qWiFC4P3Vt5jUZFmg-o1s3Dm\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=cmaponmf4tmhc382dvjkhr0gbl; _csrf-frontend=d26fc9688a3106680a44036dbb1a2cbf642e1cdd8eb8a3049c08d0552de0bb40a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22Lvin62NIIy4yqd8A5-BL18hYJ8IU8l1n%22%3B%7D; advanced-backend=l8dlsb0hojt48o1eufp7v200hb; _csrf-backend=7d42803990f0fe514c89c981793525be252b457ba184299bddae643452f60d36a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22qjPcmSvf4quoDY6Nv07sHHz1uwSQdnku%22%3B%7D; _identity-backend=85fb58f64eda9bdd355fc89b79b2b4117e2de54df9fc1d02ec017023ce70e587a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22Yo7xBU-3qWiFC4P3Vt5jUZFmg-o1s3Dm%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\PuTTY\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\xampp\\php\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\jurikaca\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\jurikaca\\AppData\\Roaming\\npm;C:\\Users\\jurikaca\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Win32) OpenSSL/1.0.2l PHP/7.1.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Win32) OpenSSL/1.0.2l PHP/7.1.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/yii_training_advanced/backend/web/index.php'
+    'REMOTE_PORT' => '56531'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=branches/Get_db2'
+    'REQUEST_URI' => '/yii_training_advanced/backend/web/index.php?r=branches/Get_db2'
+    'SCRIPT_NAME' => '/yii_training_advanced/backend/web/index.php'
+    'PHP_SELF' => '/yii_training_advanced/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512496170.678
+    'REQUEST_TIME' => 1512496170
+]

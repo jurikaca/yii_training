@@ -28,7 +28,7 @@ class SiteController extends Controller
                     [
                         'actions' => ['logout', 'index','set-cookie','show-cookie'],
                         'allow' => true,
-                        'roles' => ['@'],
+                        'roles' => ['@'], // allow only authenticated users to access the following listed actions
                     ],
                 ],
             ],

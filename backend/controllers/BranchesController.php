@@ -227,6 +227,14 @@ class BranchesController extends Controller
     }
 
     /**
+     * function to get data from db2 (another database)
+     */
+    public function actionGet_db2(){
+        $comments = Yii::$app->db2->createCommand("SELECT * FROM comment")->queryAll();
+        print_r($comments); die;
+    }
+
+    /**
      * Finds the Branches model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param string $id
