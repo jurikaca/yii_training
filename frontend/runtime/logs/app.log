@@ -62,3 +62,980 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1511388250.97
     'REQUEST_TIME' => 1511388250
 ]
+2017-11-30 19:07:46 [::1][-][0fq1do0tqk32udqi4me271r1bf][error][Error] Error: Class 'frontend\controllers\AuthItems' not found in C:\xampp\htdocs\yii_training_advanced\frontend\controllers\SiteController.php:154
+Stack trace:
+#0 [internal function]: frontend\controllers\SiteController->actionSignup()
+#1 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('signup', Array)
+#4 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#5 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 C:\xampp\htdocs\yii_training_advanced\frontend\web\index.php(17): yii\base\Application->run()
+#7 {main}
+2017-11-30 19:07:44 [::1][-][0fq1do0tqk32udqi4me271r1bf][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '768j8tl1pb39bch6qt20t0bbdu'
+    '_csrf' => '4887733ecb396ad1029a6a3cc9cabdbac3585b22f4c76ec9e4e7a7505776f3d9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"eGjDux2jWNWm7KB13HXV9JkSispO1eqC\";}'
+    'advanced-backend' => 'm6o8oloaaq0cvtbb3cb7ok4kd8'
+    '_csrf-backend' => '4de320eb7fdb1a53b5d08b10b5d1566ce8aacba5ed08f0917d83c1eed0bebc35a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"bVks5oVdNqk0PUvWeGY5yhe7L0sltFRs\";}'
+    '_identity-backend' => '85fb58f64eda9bdd355fc89b79b2b4117e2de54df9fc1d02ec017023ce70e587a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"Yo7xBU-3qWiFC4P3Vt5jUZFmg-o1s3Dm\",2592000]\";}'
+    'advanced-frontend' => '0fq1do0tqk32udqi4me271r1bf'
+    '_csrf-frontend' => '5c0f4a379c9f0f9e41d9e62cb610de14416f989441b1f92c4c86b22d17cfd6c0a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"TVpbTfudNWs6P1RK_6qztJXEVjg4OQys\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/yii_training_advanced/frontend/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=768j8tl1pb39bch6qt20t0bbdu; _csrf=4887733ecb396ad1029a6a3cc9cabdbac3585b22f4c76ec9e4e7a7505776f3d9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22eGjDux2jWNWm7KB13HXV9JkSispO1eqC%22%3B%7D; advanced-backend=m6o8oloaaq0cvtbb3cb7ok4kd8; _csrf-backend=4de320eb7fdb1a53b5d08b10b5d1566ce8aacba5ed08f0917d83c1eed0bebc35a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22bVks5oVdNqk0PUvWeGY5yhe7L0sltFRs%22%3B%7D; _identity-backend=85fb58f64eda9bdd355fc89b79b2b4117e2de54df9fc1d02ec017023ce70e587a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22Yo7xBU-3qWiFC4P3Vt5jUZFmg-o1s3Dm%22%2C2592000%5D%22%3B%7D; advanced-frontend=0fq1do0tqk32udqi4me271r1bf; _csrf-frontend=5c0f4a379c9f0f9e41d9e62cb610de14416f989441b1f92c4c86b22d17cfd6c0a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22TVpbTfudNWs6P1RK_6qztJXEVjg4OQys%22%3B%7D'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\PuTTY\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\xampp\\php\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\jurikaca\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\jurikaca\\AppData\\Roaming\\npm;C:\\Users\\jurikaca\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Win32) OpenSSL/1.0.2l PHP/7.1.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Win32) OpenSSL/1.0.2l PHP/7.1.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/yii_training_advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '57094'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/yii_training_advanced/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/yii_training_advanced/frontend/web/index.php'
+    'PHP_SELF' => '/yii_training_advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512065263.479
+    'REQUEST_TIME' => 1512065263
+]
+2017-11-30 19:08:09 [::1][-][0fq1do0tqk32udqi4me271r1bf][error][Error] Error: Class 'frontend\controllers\AuthItems' not found in C:\xampp\htdocs\yii_training_advanced\frontend\controllers\SiteController.php:154
+Stack trace:
+#0 [internal function]: frontend\controllers\SiteController->actionSignup()
+#1 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('signup', Array)
+#4 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#5 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 C:\xampp\htdocs\yii_training_advanced\frontend\web\index.php(17): yii\base\Application->run()
+#7 {main}
+2017-11-30 19:08:09 [::1][-][0fq1do0tqk32udqi4me271r1bf][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '768j8tl1pb39bch6qt20t0bbdu'
+    '_csrf' => '4887733ecb396ad1029a6a3cc9cabdbac3585b22f4c76ec9e4e7a7505776f3d9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"eGjDux2jWNWm7KB13HXV9JkSispO1eqC\";}'
+    'advanced-backend' => 'm6o8oloaaq0cvtbb3cb7ok4kd8'
+    '_csrf-backend' => '4de320eb7fdb1a53b5d08b10b5d1566ce8aacba5ed08f0917d83c1eed0bebc35a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"bVks5oVdNqk0PUvWeGY5yhe7L0sltFRs\";}'
+    '_identity-backend' => '85fb58f64eda9bdd355fc89b79b2b4117e2de54df9fc1d02ec017023ce70e587a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"Yo7xBU-3qWiFC4P3Vt5jUZFmg-o1s3Dm\",2592000]\";}'
+    'advanced-frontend' => '0fq1do0tqk32udqi4me271r1bf'
+    '_csrf-frontend' => '5c0f4a379c9f0f9e41d9e62cb610de14416f989441b1f92c4c86b22d17cfd6c0a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"TVpbTfudNWs6P1RK_6qztJXEVjg4OQys\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/yii_training_advanced/frontend/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=768j8tl1pb39bch6qt20t0bbdu; _csrf=4887733ecb396ad1029a6a3cc9cabdbac3585b22f4c76ec9e4e7a7505776f3d9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22eGjDux2jWNWm7KB13HXV9JkSispO1eqC%22%3B%7D; advanced-backend=m6o8oloaaq0cvtbb3cb7ok4kd8; _csrf-backend=4de320eb7fdb1a53b5d08b10b5d1566ce8aacba5ed08f0917d83c1eed0bebc35a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22bVks5oVdNqk0PUvWeGY5yhe7L0sltFRs%22%3B%7D; _identity-backend=85fb58f64eda9bdd355fc89b79b2b4117e2de54df9fc1d02ec017023ce70e587a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22Yo7xBU-3qWiFC4P3Vt5jUZFmg-o1s3Dm%22%2C2592000%5D%22%3B%7D; advanced-frontend=0fq1do0tqk32udqi4me271r1bf; _csrf-frontend=5c0f4a379c9f0f9e41d9e62cb610de14416f989441b1f92c4c86b22d17cfd6c0a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22TVpbTfudNWs6P1RK_6qztJXEVjg4OQys%22%3B%7D'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\PuTTY\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\xampp\\php\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\jurikaca\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\jurikaca\\AppData\\Roaming\\npm;C:\\Users\\jurikaca\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Win32) OpenSSL/1.0.2l PHP/7.1.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Win32) OpenSSL/1.0.2l PHP/7.1.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/yii_training_advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '57112'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/yii_training_advanced/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/yii_training_advanced/frontend/web/index.php'
+    'PHP_SELF' => '/yii_training_advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512065289.878
+    'REQUEST_TIME' => 1512065289
+]
+2017-11-30 19:08:51 [::1][-][0fq1do0tqk32udqi4me271r1bf][error][Error] Error: Class 'backend\models\AuthItems' not found in C:\xampp\htdocs\yii_training_advanced\frontend\controllers\SiteController.php:154
+Stack trace:
+#0 [internal function]: frontend\controllers\SiteController->actionSignup()
+#1 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('signup', Array)
+#4 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#5 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 C:\xampp\htdocs\yii_training_advanced\frontend\web\index.php(17): yii\base\Application->run()
+#7 {main}
+2017-11-30 19:08:51 [::1][-][0fq1do0tqk32udqi4me271r1bf][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '768j8tl1pb39bch6qt20t0bbdu'
+    '_csrf' => '4887733ecb396ad1029a6a3cc9cabdbac3585b22f4c76ec9e4e7a7505776f3d9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"eGjDux2jWNWm7KB13HXV9JkSispO1eqC\";}'
+    'advanced-backend' => 'm6o8oloaaq0cvtbb3cb7ok4kd8'
+    '_csrf-backend' => '4de320eb7fdb1a53b5d08b10b5d1566ce8aacba5ed08f0917d83c1eed0bebc35a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"bVks5oVdNqk0PUvWeGY5yhe7L0sltFRs\";}'
+    '_identity-backend' => '85fb58f64eda9bdd355fc89b79b2b4117e2de54df9fc1d02ec017023ce70e587a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"Yo7xBU-3qWiFC4P3Vt5jUZFmg-o1s3Dm\",2592000]\";}'
+    'advanced-frontend' => '0fq1do0tqk32udqi4me271r1bf'
+    '_csrf-frontend' => '5c0f4a379c9f0f9e41d9e62cb610de14416f989441b1f92c4c86b22d17cfd6c0a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"TVpbTfudNWs6P1RK_6qztJXEVjg4OQys\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/yii_training_advanced/frontend/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=768j8tl1pb39bch6qt20t0bbdu; _csrf=4887733ecb396ad1029a6a3cc9cabdbac3585b22f4c76ec9e4e7a7505776f3d9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22eGjDux2jWNWm7KB13HXV9JkSispO1eqC%22%3B%7D; advanced-backend=m6o8oloaaq0cvtbb3cb7ok4kd8; _csrf-backend=4de320eb7fdb1a53b5d08b10b5d1566ce8aacba5ed08f0917d83c1eed0bebc35a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22bVks5oVdNqk0PUvWeGY5yhe7L0sltFRs%22%3B%7D; _identity-backend=85fb58f64eda9bdd355fc89b79b2b4117e2de54df9fc1d02ec017023ce70e587a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22Yo7xBU-3qWiFC4P3Vt5jUZFmg-o1s3Dm%22%2C2592000%5D%22%3B%7D; advanced-frontend=0fq1do0tqk32udqi4me271r1bf; _csrf-frontend=5c0f4a379c9f0f9e41d9e62cb610de14416f989441b1f92c4c86b22d17cfd6c0a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22TVpbTfudNWs6P1RK_6qztJXEVjg4OQys%22%3B%7D'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\PuTTY\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\xampp\\php\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\jurikaca\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\jurikaca\\AppData\\Roaming\\npm;C:\\Users\\jurikaca\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Win32) OpenSSL/1.0.2l PHP/7.1.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Win32) OpenSSL/1.0.2l PHP/7.1.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/yii_training_advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '57132'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/yii_training_advanced/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/yii_training_advanced/frontend/web/index.php'
+    'PHP_SELF' => '/yii_training_advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512065331.065
+    'REQUEST_TIME' => 1512065331
+]
+2017-11-30 19:08:52 [::1][-][0fq1do0tqk32udqi4me271r1bf][error][Error] Error: Class 'backend\models\AuthItems' not found in C:\xampp\htdocs\yii_training_advanced\frontend\controllers\SiteController.php:154
+Stack trace:
+#0 [internal function]: frontend\controllers\SiteController->actionSignup()
+#1 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('signup', Array)
+#4 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#5 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 C:\xampp\htdocs\yii_training_advanced\frontend\web\index.php(17): yii\base\Application->run()
+#7 {main}
+2017-11-30 19:08:52 [::1][-][0fq1do0tqk32udqi4me271r1bf][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '768j8tl1pb39bch6qt20t0bbdu'
+    '_csrf' => '4887733ecb396ad1029a6a3cc9cabdbac3585b22f4c76ec9e4e7a7505776f3d9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"eGjDux2jWNWm7KB13HXV9JkSispO1eqC\";}'
+    'advanced-backend' => 'm6o8oloaaq0cvtbb3cb7ok4kd8'
+    '_csrf-backend' => '4de320eb7fdb1a53b5d08b10b5d1566ce8aacba5ed08f0917d83c1eed0bebc35a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"bVks5oVdNqk0PUvWeGY5yhe7L0sltFRs\";}'
+    '_identity-backend' => '85fb58f64eda9bdd355fc89b79b2b4117e2de54df9fc1d02ec017023ce70e587a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"Yo7xBU-3qWiFC4P3Vt5jUZFmg-o1s3Dm\",2592000]\";}'
+    'advanced-frontend' => '0fq1do0tqk32udqi4me271r1bf'
+    '_csrf-frontend' => '5c0f4a379c9f0f9e41d9e62cb610de14416f989441b1f92c4c86b22d17cfd6c0a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"TVpbTfudNWs6P1RK_6qztJXEVjg4OQys\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/yii_training_advanced/frontend/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=768j8tl1pb39bch6qt20t0bbdu; _csrf=4887733ecb396ad1029a6a3cc9cabdbac3585b22f4c76ec9e4e7a7505776f3d9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22eGjDux2jWNWm7KB13HXV9JkSispO1eqC%22%3B%7D; advanced-backend=m6o8oloaaq0cvtbb3cb7ok4kd8; _csrf-backend=4de320eb7fdb1a53b5d08b10b5d1566ce8aacba5ed08f0917d83c1eed0bebc35a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22bVks5oVdNqk0PUvWeGY5yhe7L0sltFRs%22%3B%7D; _identity-backend=85fb58f64eda9bdd355fc89b79b2b4117e2de54df9fc1d02ec017023ce70e587a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22Yo7xBU-3qWiFC4P3Vt5jUZFmg-o1s3Dm%22%2C2592000%5D%22%3B%7D; advanced-frontend=0fq1do0tqk32udqi4me271r1bf; _csrf-frontend=5c0f4a379c9f0f9e41d9e62cb610de14416f989441b1f92c4c86b22d17cfd6c0a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22TVpbTfudNWs6P1RK_6qztJXEVjg4OQys%22%3B%7D'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\PuTTY\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\xampp\\php\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\jurikaca\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\jurikaca\\AppData\\Roaming\\npm;C:\\Users\\jurikaca\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Win32) OpenSSL/1.0.2l PHP/7.1.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Win32) OpenSSL/1.0.2l PHP/7.1.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/yii_training_advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '57133'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/yii_training_advanced/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/yii_training_advanced/frontend/web/index.php'
+    'PHP_SELF' => '/yii_training_advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512065332.418
+    'REQUEST_TIME' => 1512065332
+]
+2017-11-30 19:09:18 [::1][-][0fq1do0tqk32udqi4me271r1bf][error][Error] Error: Class 'yii\helpers\ArrayBuilder' not found in C:\xampp\htdocs\yii_training_advanced\frontend\views\site\signup.php:29
+Stack trace:
+#0 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\View.php(332): require()
+#1 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#2 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\SiteController))
+#3 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('signup', Array, Object(frontend\controllers\SiteController))
+#4 C:\xampp\htdocs\yii_training_advanced\frontend\controllers\SiteController.php(166): yii\base\Controller->render('signup', Array)
+#5 [internal function]: frontend\controllers\SiteController->actionSignup()
+#6 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('signup', Array)
+#9 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#10 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\xampp\htdocs\yii_training_advanced\frontend\web\index.php(17): yii\base\Application->run()
+#12 {main}
+2017-11-30 19:09:17 [::1][-][0fq1do0tqk32udqi4me271r1bf][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '768j8tl1pb39bch6qt20t0bbdu'
+    '_csrf' => '4887733ecb396ad1029a6a3cc9cabdbac3585b22f4c76ec9e4e7a7505776f3d9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"eGjDux2jWNWm7KB13HXV9JkSispO1eqC\";}'
+    'advanced-backend' => 'm6o8oloaaq0cvtbb3cb7ok4kd8'
+    '_csrf-backend' => '4de320eb7fdb1a53b5d08b10b5d1566ce8aacba5ed08f0917d83c1eed0bebc35a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"bVks5oVdNqk0PUvWeGY5yhe7L0sltFRs\";}'
+    '_identity-backend' => '85fb58f64eda9bdd355fc89b79b2b4117e2de54df9fc1d02ec017023ce70e587a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"Yo7xBU-3qWiFC4P3Vt5jUZFmg-o1s3Dm\",2592000]\";}'
+    'advanced-frontend' => '0fq1do0tqk32udqi4me271r1bf'
+    '_csrf-frontend' => '5c0f4a379c9f0f9e41d9e62cb610de14416f989441b1f92c4c86b22d17cfd6c0a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"TVpbTfudNWs6P1RK_6qztJXEVjg4OQys\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/yii_training_advanced/frontend/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=768j8tl1pb39bch6qt20t0bbdu; _csrf=4887733ecb396ad1029a6a3cc9cabdbac3585b22f4c76ec9e4e7a7505776f3d9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22eGjDux2jWNWm7KB13HXV9JkSispO1eqC%22%3B%7D; advanced-backend=m6o8oloaaq0cvtbb3cb7ok4kd8; _csrf-backend=4de320eb7fdb1a53b5d08b10b5d1566ce8aacba5ed08f0917d83c1eed0bebc35a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22bVks5oVdNqk0PUvWeGY5yhe7L0sltFRs%22%3B%7D; _identity-backend=85fb58f64eda9bdd355fc89b79b2b4117e2de54df9fc1d02ec017023ce70e587a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22Yo7xBU-3qWiFC4P3Vt5jUZFmg-o1s3Dm%22%2C2592000%5D%22%3B%7D; advanced-frontend=0fq1do0tqk32udqi4me271r1bf; _csrf-frontend=5c0f4a379c9f0f9e41d9e62cb610de14416f989441b1f92c4c86b22d17cfd6c0a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22TVpbTfudNWs6P1RK_6qztJXEVjg4OQys%22%3B%7D'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\PuTTY\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\xampp\\php\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\jurikaca\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\jurikaca\\AppData\\Roaming\\npm;C:\\Users\\jurikaca\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Win32) OpenSSL/1.0.2l PHP/7.1.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Win32) OpenSSL/1.0.2l PHP/7.1.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/yii_training_advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '57152'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/yii_training_advanced/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/yii_training_advanced/frontend/web/index.php'
+    'PHP_SELF' => '/yii_training_advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512065356.985
+    'REQUEST_TIME' => 1512065356
+]
+2017-11-30 19:09:44 [::1][-][0fq1do0tqk32udqi4me271r1bf][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: frontend\models\SignupForm::authItems in C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\Component.php:148
+Stack trace:
+#0 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(2121): yii\base\Component->__get('authItems')
+#1 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(1729): yii\helpers\BaseHtml::getAttributeValue(Object(frontend\models\SignupForm), 'authItems')
+#2 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(1667): yii\helpers\BaseHtml::activeListInput('checkboxList', Object(frontend\models\SignupForm), 'authItems', Array, Array)
+#3 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\widgets\ActiveField.php(662): yii\helpers\BaseHtml::activeCheckboxList(Object(frontend\models\SignupForm), 'authItems', Array, Array)
+#4 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2-bootstrap\ActiveField.php(264): yii\widgets\ActiveField->checkboxList(Array, Array)
+#5 C:\xampp\htdocs\yii_training_advanced\frontend\views\site\signup.php(29): yii\bootstrap\ActiveField->checkboxList(Array)
+#6 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\View.php(332): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#8 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\SiteController))
+#9 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('signup', Array, Object(frontend\controllers\SiteController))
+#10 C:\xampp\htdocs\yii_training_advanced\frontend\controllers\SiteController.php(166): yii\base\Controller->render('signup', Array)
+#11 [internal function]: frontend\controllers\SiteController->actionSignup()
+#12 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#13 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#14 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('signup', Array)
+#15 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#16 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 C:\xampp\htdocs\yii_training_advanced\frontend\web\index.php(17): yii\base\Application->run()
+#18 {main}
+2017-11-30 19:09:43 [::1][-][0fq1do0tqk32udqi4me271r1bf][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '768j8tl1pb39bch6qt20t0bbdu'
+    '_csrf' => '4887733ecb396ad1029a6a3cc9cabdbac3585b22f4c76ec9e4e7a7505776f3d9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"eGjDux2jWNWm7KB13HXV9JkSispO1eqC\";}'
+    'advanced-backend' => 'm6o8oloaaq0cvtbb3cb7ok4kd8'
+    '_csrf-backend' => '4de320eb7fdb1a53b5d08b10b5d1566ce8aacba5ed08f0917d83c1eed0bebc35a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"bVks5oVdNqk0PUvWeGY5yhe7L0sltFRs\";}'
+    '_identity-backend' => '85fb58f64eda9bdd355fc89b79b2b4117e2de54df9fc1d02ec017023ce70e587a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"Yo7xBU-3qWiFC4P3Vt5jUZFmg-o1s3Dm\",2592000]\";}'
+    'advanced-frontend' => '0fq1do0tqk32udqi4me271r1bf'
+    '_csrf-frontend' => '5c0f4a379c9f0f9e41d9e62cb610de14416f989441b1f92c4c86b22d17cfd6c0a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"TVpbTfudNWs6P1RK_6qztJXEVjg4OQys\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/yii_training_advanced/frontend/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=768j8tl1pb39bch6qt20t0bbdu; _csrf=4887733ecb396ad1029a6a3cc9cabdbac3585b22f4c76ec9e4e7a7505776f3d9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22eGjDux2jWNWm7KB13HXV9JkSispO1eqC%22%3B%7D; advanced-backend=m6o8oloaaq0cvtbb3cb7ok4kd8; _csrf-backend=4de320eb7fdb1a53b5d08b10b5d1566ce8aacba5ed08f0917d83c1eed0bebc35a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22bVks5oVdNqk0PUvWeGY5yhe7L0sltFRs%22%3B%7D; _identity-backend=85fb58f64eda9bdd355fc89b79b2b4117e2de54df9fc1d02ec017023ce70e587a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22Yo7xBU-3qWiFC4P3Vt5jUZFmg-o1s3Dm%22%2C2592000%5D%22%3B%7D; advanced-frontend=0fq1do0tqk32udqi4me271r1bf; _csrf-frontend=5c0f4a379c9f0f9e41d9e62cb610de14416f989441b1f92c4c86b22d17cfd6c0a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22TVpbTfudNWs6P1RK_6qztJXEVjg4OQys%22%3B%7D'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\PuTTY\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\xampp\\php\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\jurikaca\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\jurikaca\\AppData\\Roaming\\npm;C:\\Users\\jurikaca\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Win32) OpenSSL/1.0.2l PHP/7.1.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Win32) OpenSSL/1.0.2l PHP/7.1.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/yii_training_advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '57165'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/yii_training_advanced/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/yii_training_advanced/frontend/web/index.php'
+    'PHP_SELF' => '/yii_training_advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512065383.814
+    'REQUEST_TIME' => 1512065383
+]
+2017-11-30 19:10:40 [::1][-][0fq1do0tqk32udqi4me271r1bf][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: frontend\models\SignupForm::authItems in C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\Component.php:148
+Stack trace:
+#0 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(2121): yii\base\Component->__get('authItems')
+#1 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(1729): yii\helpers\BaseHtml::getAttributeValue(Object(frontend\models\SignupForm), 'authItems')
+#2 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(1667): yii\helpers\BaseHtml::activeListInput('checkboxList', Object(frontend\models\SignupForm), 'authItems', Array, Array)
+#3 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\widgets\ActiveField.php(662): yii\helpers\BaseHtml::activeCheckboxList(Object(frontend\models\SignupForm), 'authItems', Array, Array)
+#4 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2-bootstrap\ActiveField.php(264): yii\widgets\ActiveField->checkboxList(Array, Array)
+#5 C:\xampp\htdocs\yii_training_advanced\frontend\views\site\signup.php(29): yii\bootstrap\ActiveField->checkboxList(Array)
+#6 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\View.php(332): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#8 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\SiteController))
+#9 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('signup', Array, Object(frontend\controllers\SiteController))
+#10 C:\xampp\htdocs\yii_training_advanced\frontend\controllers\SiteController.php(166): yii\base\Controller->render('signup', Array)
+#11 [internal function]: frontend\controllers\SiteController->actionSignup()
+#12 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#13 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#14 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('signup', Array)
+#15 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#16 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 C:\xampp\htdocs\yii_training_advanced\frontend\web\index.php(17): yii\base\Application->run()
+#18 {main}
+2017-11-30 19:10:40 [::1][-][0fq1do0tqk32udqi4me271r1bf][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '768j8tl1pb39bch6qt20t0bbdu'
+    '_csrf' => '4887733ecb396ad1029a6a3cc9cabdbac3585b22f4c76ec9e4e7a7505776f3d9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"eGjDux2jWNWm7KB13HXV9JkSispO1eqC\";}'
+    'advanced-backend' => 'm6o8oloaaq0cvtbb3cb7ok4kd8'
+    '_csrf-backend' => '4de320eb7fdb1a53b5d08b10b5d1566ce8aacba5ed08f0917d83c1eed0bebc35a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"bVks5oVdNqk0PUvWeGY5yhe7L0sltFRs\";}'
+    '_identity-backend' => '85fb58f64eda9bdd355fc89b79b2b4117e2de54df9fc1d02ec017023ce70e587a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"Yo7xBU-3qWiFC4P3Vt5jUZFmg-o1s3Dm\",2592000]\";}'
+    'advanced-frontend' => '0fq1do0tqk32udqi4me271r1bf'
+    '_csrf-frontend' => '5c0f4a379c9f0f9e41d9e62cb610de14416f989441b1f92c4c86b22d17cfd6c0a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"TVpbTfudNWs6P1RK_6qztJXEVjg4OQys\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/yii_training_advanced/frontend/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=768j8tl1pb39bch6qt20t0bbdu; _csrf=4887733ecb396ad1029a6a3cc9cabdbac3585b22f4c76ec9e4e7a7505776f3d9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22eGjDux2jWNWm7KB13HXV9JkSispO1eqC%22%3B%7D; advanced-backend=m6o8oloaaq0cvtbb3cb7ok4kd8; _csrf-backend=4de320eb7fdb1a53b5d08b10b5d1566ce8aacba5ed08f0917d83c1eed0bebc35a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22bVks5oVdNqk0PUvWeGY5yhe7L0sltFRs%22%3B%7D; _identity-backend=85fb58f64eda9bdd355fc89b79b2b4117e2de54df9fc1d02ec017023ce70e587a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22Yo7xBU-3qWiFC4P3Vt5jUZFmg-o1s3Dm%22%2C2592000%5D%22%3B%7D; advanced-frontend=0fq1do0tqk32udqi4me271r1bf; _csrf-frontend=5c0f4a379c9f0f9e41d9e62cb610de14416f989441b1f92c4c86b22d17cfd6c0a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22TVpbTfudNWs6P1RK_6qztJXEVjg4OQys%22%3B%7D'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\PuTTY\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\xampp\\php\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\jurikaca\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\jurikaca\\AppData\\Roaming\\npm;C:\\Users\\jurikaca\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Win32) OpenSSL/1.0.2l PHP/7.1.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Win32) OpenSSL/1.0.2l PHP/7.1.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/yii_training_advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '57198'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/yii_training_advanced/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/yii_training_advanced/frontend/web/index.php'
+    'PHP_SELF' => '/yii_training_advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512065440.855
+    'REQUEST_TIME' => 1512065440
+]
+2017-11-30 19:11:34 [::1][-][0fq1do0tqk32udqi4me271r1bf][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: frontend\models\SignupForm::authItems in C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\Component.php:148
+Stack trace:
+#0 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(2121): yii\base\Component->__get('authItems')
+#1 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(1729): yii\helpers\BaseHtml::getAttributeValue(Object(frontend\models\SignupForm), 'authItems')
+#2 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(1667): yii\helpers\BaseHtml::activeListInput('checkboxList', Object(frontend\models\SignupForm), 'authItems', Array, Array)
+#3 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\widgets\ActiveField.php(662): yii\helpers\BaseHtml::activeCheckboxList(Object(frontend\models\SignupForm), 'authItems', Array, Array)
+#4 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2-bootstrap\ActiveField.php(264): yii\widgets\ActiveField->checkboxList(Array, Array)
+#5 C:\xampp\htdocs\yii_training_advanced\frontend\views\site\signup.php(29): yii\bootstrap\ActiveField->checkboxList(Array)
+#6 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\View.php(332): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#8 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\SiteController))
+#9 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('signup', Array, Object(frontend\controllers\SiteController))
+#10 C:\xampp\htdocs\yii_training_advanced\frontend\controllers\SiteController.php(166): yii\base\Controller->render('signup', Array)
+#11 [internal function]: frontend\controllers\SiteController->actionSignup()
+#12 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#13 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#14 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('signup', Array)
+#15 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#16 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 C:\xampp\htdocs\yii_training_advanced\frontend\web\index.php(17): yii\base\Application->run()
+#18 {main}
+2017-11-30 19:11:34 [::1][-][0fq1do0tqk32udqi4me271r1bf][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '768j8tl1pb39bch6qt20t0bbdu'
+    '_csrf' => '4887733ecb396ad1029a6a3cc9cabdbac3585b22f4c76ec9e4e7a7505776f3d9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"eGjDux2jWNWm7KB13HXV9JkSispO1eqC\";}'
+    'advanced-backend' => 'm6o8oloaaq0cvtbb3cb7ok4kd8'
+    '_csrf-backend' => '4de320eb7fdb1a53b5d08b10b5d1566ce8aacba5ed08f0917d83c1eed0bebc35a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"bVks5oVdNqk0PUvWeGY5yhe7L0sltFRs\";}'
+    '_identity-backend' => '85fb58f64eda9bdd355fc89b79b2b4117e2de54df9fc1d02ec017023ce70e587a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"Yo7xBU-3qWiFC4P3Vt5jUZFmg-o1s3Dm\",2592000]\";}'
+    'advanced-frontend' => '0fq1do0tqk32udqi4me271r1bf'
+    '_csrf-frontend' => '5c0f4a379c9f0f9e41d9e62cb610de14416f989441b1f92c4c86b22d17cfd6c0a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"TVpbTfudNWs6P1RK_6qztJXEVjg4OQys\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/yii_training_advanced/frontend/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=768j8tl1pb39bch6qt20t0bbdu; _csrf=4887733ecb396ad1029a6a3cc9cabdbac3585b22f4c76ec9e4e7a7505776f3d9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22eGjDux2jWNWm7KB13HXV9JkSispO1eqC%22%3B%7D; advanced-backend=m6o8oloaaq0cvtbb3cb7ok4kd8; _csrf-backend=4de320eb7fdb1a53b5d08b10b5d1566ce8aacba5ed08f0917d83c1eed0bebc35a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22bVks5oVdNqk0PUvWeGY5yhe7L0sltFRs%22%3B%7D; _identity-backend=85fb58f64eda9bdd355fc89b79b2b4117e2de54df9fc1d02ec017023ce70e587a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22Yo7xBU-3qWiFC4P3Vt5jUZFmg-o1s3Dm%22%2C2592000%5D%22%3B%7D; advanced-frontend=0fq1do0tqk32udqi4me271r1bf; _csrf-frontend=5c0f4a379c9f0f9e41d9e62cb610de14416f989441b1f92c4c86b22d17cfd6c0a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22TVpbTfudNWs6P1RK_6qztJXEVjg4OQys%22%3B%7D'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\PuTTY\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\xampp\\php\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\jurikaca\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\jurikaca\\AppData\\Roaming\\npm;C:\\Users\\jurikaca\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Win32) OpenSSL/1.0.2l PHP/7.1.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Win32) OpenSSL/1.0.2l PHP/7.1.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/yii_training_advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '57224'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/yii_training_advanced/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/yii_training_advanced/frontend/web/index.php'
+    'PHP_SELF' => '/yii_training_advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512065494.458
+    'REQUEST_TIME' => 1512065494
+]
+2017-11-30 19:12:12 [::1][-][0fq1do0tqk32udqi4me271r1bf][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: frontend\models\SignupForm::authItems in C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\Component.php:148
+Stack trace:
+#0 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(2121): yii\base\Component->__get('authItems')
+#1 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(1729): yii\helpers\BaseHtml::getAttributeValue(Object(frontend\models\SignupForm), 'authItems')
+#2 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(1667): yii\helpers\BaseHtml::activeListInput('checkboxList', Object(frontend\models\SignupForm), 'authItems', Array, Array)
+#3 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\widgets\ActiveField.php(662): yii\helpers\BaseHtml::activeCheckboxList(Object(frontend\models\SignupForm), 'authItems', Array, Array)
+#4 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2-bootstrap\ActiveField.php(264): yii\widgets\ActiveField->checkboxList(Array, Array)
+#5 C:\xampp\htdocs\yii_training_advanced\frontend\views\site\signup.php(29): yii\bootstrap\ActiveField->checkboxList(Array)
+#6 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\View.php(332): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#8 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\SiteController))
+#9 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('signup', Array, Object(frontend\controllers\SiteController))
+#10 C:\xampp\htdocs\yii_training_advanced\frontend\controllers\SiteController.php(166): yii\base\Controller->render('signup', Array)
+#11 [internal function]: frontend\controllers\SiteController->actionSignup()
+#12 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#13 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#14 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('signup', Array)
+#15 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#16 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 C:\xampp\htdocs\yii_training_advanced\frontend\web\index.php(17): yii\base\Application->run()
+#18 {main}
+2017-11-30 19:12:12 [::1][-][0fq1do0tqk32udqi4me271r1bf][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '768j8tl1pb39bch6qt20t0bbdu'
+    '_csrf' => '4887733ecb396ad1029a6a3cc9cabdbac3585b22f4c76ec9e4e7a7505776f3d9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"eGjDux2jWNWm7KB13HXV9JkSispO1eqC\";}'
+    'advanced-backend' => 'm6o8oloaaq0cvtbb3cb7ok4kd8'
+    '_csrf-backend' => '4de320eb7fdb1a53b5d08b10b5d1566ce8aacba5ed08f0917d83c1eed0bebc35a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"bVks5oVdNqk0PUvWeGY5yhe7L0sltFRs\";}'
+    '_identity-backend' => '85fb58f64eda9bdd355fc89b79b2b4117e2de54df9fc1d02ec017023ce70e587a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"Yo7xBU-3qWiFC4P3Vt5jUZFmg-o1s3Dm\",2592000]\";}'
+    'advanced-frontend' => '0fq1do0tqk32udqi4me271r1bf'
+    '_csrf-frontend' => '5c0f4a379c9f0f9e41d9e62cb610de14416f989441b1f92c4c86b22d17cfd6c0a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"TVpbTfudNWs6P1RK_6qztJXEVjg4OQys\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/yii_training_advanced/frontend/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=768j8tl1pb39bch6qt20t0bbdu; _csrf=4887733ecb396ad1029a6a3cc9cabdbac3585b22f4c76ec9e4e7a7505776f3d9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22eGjDux2jWNWm7KB13HXV9JkSispO1eqC%22%3B%7D; advanced-backend=m6o8oloaaq0cvtbb3cb7ok4kd8; _csrf-backend=4de320eb7fdb1a53b5d08b10b5d1566ce8aacba5ed08f0917d83c1eed0bebc35a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22bVks5oVdNqk0PUvWeGY5yhe7L0sltFRs%22%3B%7D; _identity-backend=85fb58f64eda9bdd355fc89b79b2b4117e2de54df9fc1d02ec017023ce70e587a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22Yo7xBU-3qWiFC4P3Vt5jUZFmg-o1s3Dm%22%2C2592000%5D%22%3B%7D; advanced-frontend=0fq1do0tqk32udqi4me271r1bf; _csrf-frontend=5c0f4a379c9f0f9e41d9e62cb610de14416f989441b1f92c4c86b22d17cfd6c0a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22TVpbTfudNWs6P1RK_6qztJXEVjg4OQys%22%3B%7D'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\PuTTY\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\xampp\\php\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\jurikaca\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\jurikaca\\AppData\\Roaming\\npm;C:\\Users\\jurikaca\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Win32) OpenSSL/1.0.2l PHP/7.1.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Win32) OpenSSL/1.0.2l PHP/7.1.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/yii_training_advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '57249'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/yii_training_advanced/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/yii_training_advanced/frontend/web/index.php'
+    'PHP_SELF' => '/yii_training_advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512065532.735
+    'REQUEST_TIME' => 1512065532
+]
+2017-11-30 19:14:10 [::1][-][0fq1do0tqk32udqi4me271r1bf][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: frontend\models\SignupForm::authItems in C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\Component.php:148
+Stack trace:
+#0 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(2121): yii\base\Component->__get('authItems')
+#1 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(1729): yii\helpers\BaseHtml::getAttributeValue(Object(frontend\models\SignupForm), 'authItems')
+#2 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\helpers\BaseHtml.php(1667): yii\helpers\BaseHtml::activeListInput('checkboxList', Object(frontend\models\SignupForm), 'authItems', Array, Array)
+#3 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\widgets\ActiveField.php(662): yii\helpers\BaseHtml::activeCheckboxList(Object(frontend\models\SignupForm), 'authItems', Array, Array)
+#4 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2-bootstrap\ActiveField.php(264): yii\widgets\ActiveField->checkboxList(Array, Array)
+#5 C:\xampp\htdocs\yii_training_advanced\frontend\views\site\signup.php(29): yii\bootstrap\ActiveField->checkboxList(Array)
+#6 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\View.php(332): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#8 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\SiteController))
+#9 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('signup', Array, Object(frontend\controllers\SiteController))
+#10 C:\xampp\htdocs\yii_training_advanced\frontend\controllers\SiteController.php(166): yii\base\Controller->render('signup', Array)
+#11 [internal function]: frontend\controllers\SiteController->actionSignup()
+#12 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#13 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#14 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('signup', Array)
+#15 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#16 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 C:\xampp\htdocs\yii_training_advanced\frontend\web\index.php(17): yii\base\Application->run()
+#18 {main}
+2017-11-30 19:14:10 [::1][-][0fq1do0tqk32udqi4me271r1bf][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '768j8tl1pb39bch6qt20t0bbdu'
+    '_csrf' => '4887733ecb396ad1029a6a3cc9cabdbac3585b22f4c76ec9e4e7a7505776f3d9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"eGjDux2jWNWm7KB13HXV9JkSispO1eqC\";}'
+    'advanced-backend' => 'm6o8oloaaq0cvtbb3cb7ok4kd8'
+    '_csrf-backend' => '4de320eb7fdb1a53b5d08b10b5d1566ce8aacba5ed08f0917d83c1eed0bebc35a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"bVks5oVdNqk0PUvWeGY5yhe7L0sltFRs\";}'
+    '_identity-backend' => '85fb58f64eda9bdd355fc89b79b2b4117e2de54df9fc1d02ec017023ce70e587a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"Yo7xBU-3qWiFC4P3Vt5jUZFmg-o1s3Dm\",2592000]\";}'
+    'advanced-frontend' => '0fq1do0tqk32udqi4me271r1bf'
+    '_csrf-frontend' => '5c0f4a379c9f0f9e41d9e62cb610de14416f989441b1f92c4c86b22d17cfd6c0a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"TVpbTfudNWs6P1RK_6qztJXEVjg4OQys\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/yii_training_advanced/frontend/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=768j8tl1pb39bch6qt20t0bbdu; _csrf=4887733ecb396ad1029a6a3cc9cabdbac3585b22f4c76ec9e4e7a7505776f3d9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22eGjDux2jWNWm7KB13HXV9JkSispO1eqC%22%3B%7D; advanced-backend=m6o8oloaaq0cvtbb3cb7ok4kd8; _csrf-backend=4de320eb7fdb1a53b5d08b10b5d1566ce8aacba5ed08f0917d83c1eed0bebc35a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22bVks5oVdNqk0PUvWeGY5yhe7L0sltFRs%22%3B%7D; _identity-backend=85fb58f64eda9bdd355fc89b79b2b4117e2de54df9fc1d02ec017023ce70e587a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22Yo7xBU-3qWiFC4P3Vt5jUZFmg-o1s3Dm%22%2C2592000%5D%22%3B%7D; advanced-frontend=0fq1do0tqk32udqi4me271r1bf; _csrf-frontend=5c0f4a379c9f0f9e41d9e62cb610de14416f989441b1f92c4c86b22d17cfd6c0a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22TVpbTfudNWs6P1RK_6qztJXEVjg4OQys%22%3B%7D'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\PuTTY\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\xampp\\php\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\jurikaca\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\jurikaca\\AppData\\Roaming\\npm;C:\\Users\\jurikaca\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Win32) OpenSSL/1.0.2l PHP/7.1.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Win32) OpenSSL/1.0.2l PHP/7.1.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/yii_training_advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '57289'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/yii_training_advanced/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/yii_training_advanced/frontend/web/index.php'
+    'PHP_SELF' => '/yii_training_advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512065650.419
+    'REQUEST_TIME' => 1512065650
+]
+2017-11-30 19:33:48 [::1][-][0fq1do0tqk32udqi4me271r1bf][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: yii\bootstrap\ActiveForm::name in C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\Component.php:203
+Stack trace:
+#0 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\BaseYii.php(532): yii\base\Component->__set('name', 'SignupForm')
+#1 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\BaseObject.php(106): yii\BaseYii::configure(Object(yii\bootstrap\ActiveForm), Array)
+#2 [internal function]: yii\base\BaseObject->__construct(Array)
+#3 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\di\Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#4 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\bootstrap\\A...', Array, Array)
+#5 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\bootstrap\\A...', Array, Array)
+#6 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\Widget.php(89): yii\BaseYii::createObject(Array)
+#7 C:\xampp\htdocs\yii_training_advanced\frontend\views\site\signup.php(21): yii\base\Widget::begin(Array)
+#8 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\View.php(332): require('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(frontend\controllers\SiteController))
+#11 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('signup', Array, Object(frontend\controllers\SiteController))
+#12 C:\xampp\htdocs\yii_training_advanced\frontend\controllers\SiteController.php(166): yii\base\Controller->render('signup', Array)
+#13 [internal function]: frontend\controllers\SiteController->actionSignup()
+#14 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('signup', Array)
+#17 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#18 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\xampp\htdocs\yii_training_advanced\frontend\web\index.php(17): yii\base\Application->run()
+#20 {main}
+2017-11-30 19:33:44 [::1][-][0fq1do0tqk32udqi4me271r1bf][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '768j8tl1pb39bch6qt20t0bbdu'
+    '_csrf' => '4887733ecb396ad1029a6a3cc9cabdbac3585b22f4c76ec9e4e7a7505776f3d9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"eGjDux2jWNWm7KB13HXV9JkSispO1eqC\";}'
+    'advanced-backend' => 'm6o8oloaaq0cvtbb3cb7ok4kd8'
+    '_csrf-backend' => '4de320eb7fdb1a53b5d08b10b5d1566ce8aacba5ed08f0917d83c1eed0bebc35a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"bVks5oVdNqk0PUvWeGY5yhe7L0sltFRs\";}'
+    '_identity-backend' => '85fb58f64eda9bdd355fc89b79b2b4117e2de54df9fc1d02ec017023ce70e587a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"Yo7xBU-3qWiFC4P3Vt5jUZFmg-o1s3Dm\",2592000]\";}'
+    'advanced-frontend' => '0fq1do0tqk32udqi4me271r1bf'
+    '_csrf-frontend' => '5c0f4a379c9f0f9e41d9e62cb610de14416f989441b1f92c4c86b22d17cfd6c0a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"TVpbTfudNWs6P1RK_6qztJXEVjg4OQys\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/yii_training_advanced/frontend/web/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=768j8tl1pb39bch6qt20t0bbdu; _csrf=4887733ecb396ad1029a6a3cc9cabdbac3585b22f4c76ec9e4e7a7505776f3d9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22eGjDux2jWNWm7KB13HXV9JkSispO1eqC%22%3B%7D; advanced-backend=m6o8oloaaq0cvtbb3cb7ok4kd8; _csrf-backend=4de320eb7fdb1a53b5d08b10b5d1566ce8aacba5ed08f0917d83c1eed0bebc35a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22bVks5oVdNqk0PUvWeGY5yhe7L0sltFRs%22%3B%7D; _identity-backend=85fb58f64eda9bdd355fc89b79b2b4117e2de54df9fc1d02ec017023ce70e587a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22Yo7xBU-3qWiFC4P3Vt5jUZFmg-o1s3Dm%22%2C2592000%5D%22%3B%7D; advanced-frontend=0fq1do0tqk32udqi4me271r1bf; _csrf-frontend=5c0f4a379c9f0f9e41d9e62cb610de14416f989441b1f92c4c86b22d17cfd6c0a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22TVpbTfudNWs6P1RK_6qztJXEVjg4OQys%22%3B%7D'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\PuTTY\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\xampp\\php\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\jurikaca\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\jurikaca\\AppData\\Roaming\\npm;C:\\Users\\jurikaca\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Win32) OpenSSL/1.0.2l PHP/7.1.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Win32) OpenSSL/1.0.2l PHP/7.1.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/yii_training_advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '58310'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/yii_training_advanced/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/yii_training_advanced/frontend/web/index.php'
+    'PHP_SELF' => '/yii_training_advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512066823.898
+    'REQUEST_TIME' => 1512066823
+]
+2017-11-30 19:37:30 [::1][-][0fq1do0tqk32udqi4me271r1bf][error][yii\base\ErrorException:2] yii\base\ErrorException: Invalid argument supplied for foreach() in C:\xampp\htdocs\yii_training_advanced\frontend\models\SignupForm.php:61
+Stack trace:
+#0 C:\xampp\htdocs\yii_training_advanced\frontend\models\SignupForm.php(61): yii\base\ErrorHandler->handleError(2, 'Invalid argumen...', 'C:\\xampp\\htdocs...', 61, Array)
+#1 C:\xampp\htdocs\yii_training_advanced\frontend\controllers\SiteController.php(157): frontend\models\SignupForm->signup()
+#2 [internal function]: frontend\controllers\SiteController->actionSignup()
+#3 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('signup', Array)
+#6 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#7 C:\xampp\htdocs\yii_training_advanced\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\xampp\htdocs\yii_training_advanced\frontend\web\index.php(17): yii\base\Application->run()
+#9 {main}
+2017-11-30 19:37:29 [::1][-][0fq1do0tqk32udqi4me271r1bf][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_POST = [
+    '_csrf-frontend' => 'NpGMOHKFEnbYZV1k_zgps8iY31obJ11FDBvERUGNNXxix_xaJuNnEpYyLlKvCXv4l66uIG9tBQBacaNxDtxMDw=='
+    'SignupForm' => [
+        'username' => 'testing'
+        'email' => 'testing@gmail.com'
+        'password' => 'juri15'
+        'permissions' => ''
+    ]
+    'signup-button' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '768j8tl1pb39bch6qt20t0bbdu'
+    '_csrf' => '4887733ecb396ad1029a6a3cc9cabdbac3585b22f4c76ec9e4e7a7505776f3d9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"eGjDux2jWNWm7KB13HXV9JkSispO1eqC\";}'
+    'advanced-backend' => 'm6o8oloaaq0cvtbb3cb7ok4kd8'
+    '_csrf-backend' => '4de320eb7fdb1a53b5d08b10b5d1566ce8aacba5ed08f0917d83c1eed0bebc35a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"bVks5oVdNqk0PUvWeGY5yhe7L0sltFRs\";}'
+    '_identity-backend' => '85fb58f64eda9bdd355fc89b79b2b4117e2de54df9fc1d02ec017023ce70e587a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"Yo7xBU-3qWiFC4P3Vt5jUZFmg-o1s3Dm\",2592000]\";}'
+    'advanced-frontend' => '0fq1do0tqk32udqi4me271r1bf'
+    '_csrf-frontend' => '5c0f4a379c9f0f9e41d9e62cb610de14416f989441b1f92c4c86b22d17cfd6c0a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"TVpbTfudNWs6P1RK_6qztJXEVjg4OQys\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '258'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/yii_training_advanced/frontend/web/index.php?r=site%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=768j8tl1pb39bch6qt20t0bbdu; _csrf=4887733ecb396ad1029a6a3cc9cabdbac3585b22f4c76ec9e4e7a7505776f3d9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22eGjDux2jWNWm7KB13HXV9JkSispO1eqC%22%3B%7D; advanced-backend=m6o8oloaaq0cvtbb3cb7ok4kd8; _csrf-backend=4de320eb7fdb1a53b5d08b10b5d1566ce8aacba5ed08f0917d83c1eed0bebc35a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22bVks5oVdNqk0PUvWeGY5yhe7L0sltFRs%22%3B%7D; _identity-backend=85fb58f64eda9bdd355fc89b79b2b4117e2de54df9fc1d02ec017023ce70e587a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22Yo7xBU-3qWiFC4P3Vt5jUZFmg-o1s3Dm%22%2C2592000%5D%22%3B%7D; advanced-frontend=0fq1do0tqk32udqi4me271r1bf; _csrf-frontend=5c0f4a379c9f0f9e41d9e62cb610de14416f989441b1f92c4c86b22d17cfd6c0a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22TVpbTfudNWs6P1RK_6qztJXEVjg4OQys%22%3B%7D'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\PuTTY\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\xampp\\php\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\jurikaca\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\jurikaca\\AppData\\Roaming\\npm;C:\\Users\\jurikaca\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Win32) OpenSSL/1.0.2l PHP/7.1.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Win32) OpenSSL/1.0.2l PHP/7.1.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/yii_training_advanced/frontend/web/index.php'
+    'REMOTE_PORT' => '58719'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/yii_training_advanced/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/yii_training_advanced/frontend/web/index.php'
+    'PHP_SELF' => '/yii_training_advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1512067049.4
+    'REQUEST_TIME' => 1512067049
+]
