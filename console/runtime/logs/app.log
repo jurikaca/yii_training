@@ -64,3 +64,317 @@ Stack trace:
     ]
     'argc' => 2
 ]
+2017-12-14 20:28:26 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'user' already exists in C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\db\Command.php:994
+Stack trace:
+#0 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\db\Command.php(994): PDOStatement->execute()
+#1 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\db\Migration.php(300): yii\db\Command->execute()
+#2 C:\xampp\htdocs\inventory_app\console\migrations\m130524_201442_init.php(26): yii\db\Migration->createTable('{{%user}}', Array, 'CHARACTER SET u...')
+#3 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(726): m130524_201442_init->up()
+#4 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(200): yii\console\controllers\BaseMigrateController->migrateUp('m130524_201442_...')
+#5 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#6 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\console\Controller.php(135): yii\base\Controller->runAction('', Array)
+#9 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('', Array)
+#10 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#11 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#12 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#13 C:\xampp\htdocs\inventory_app\yii(27): yii\base\Application->run()
+#14 {main}
+
+Next yii\db\Exception: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'user' already exists
+The SQL being executed was: CREATE TABLE `user` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`username` varchar(255) NOT NULL UNIQUE,
+	`auth_key` varchar(32) NOT NULL,
+	`password_hash` varchar(255) NOT NULL,
+	`password_reset_token` varchar(255) UNIQUE,
+	`email` varchar(255) NOT NULL UNIQUE,
+	`status` smallint(6) NOT NULL DEFAULT 10,
+	`created_at` int(11) NOT NULL,
+	`updated_at` int(11) NOT NULL
+) CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE=InnoDB in C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\db\Schema.php:595
+Stack trace:
+#0 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\db\Command.php(1004): yii\db\Schema->convertException(Object(PDOException), 'CREATE TABLE `u...')
+#1 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\db\Migration.php(300): yii\db\Command->execute()
+#2 C:\xampp\htdocs\inventory_app\console\migrations\m130524_201442_init.php(26): yii\db\Migration->createTable('{{%user}}', Array, 'CHARACTER SET u...')
+#3 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(726): m130524_201442_init->up()
+#4 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(200): yii\console\controllers\BaseMigrateController->migrateUp('m130524_201442_...')
+#5 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#6 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\console\Controller.php(135): yii\base\Controller->runAction('', Array)
+#9 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('', Array)
+#10 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#11 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#12 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#13 C:\xampp\htdocs\inventory_app\yii(27): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => 42S01
+    [1] => 1050
+    [2] => Table 'user' already exists
+)
+
+2017-12-14 20:27:59 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\jurikaca\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'ADMINRG-L2UI9G1'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\jurikaca'
+    'LOCALAPPDATA' => 'C:\\Users\\jurikaca\\AppData\\Local'
+    'LOGONSERVER' => '\\\\ADMINRG-L2UI9G1'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\jurikaca\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\PuTTY\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\xampp\\php\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\jurikaca\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\jurikaca\\AppData\\Roaming\\npm;C:\\Users\\jurikaca\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3a09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\jurikaca\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\jurikaca\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'ADMINRG-L2UI9G1'
+    'USERDOMAIN_ROAMINGPROFILE' => 'ADMINRG-L2UI9G1'
+    'USERNAME' => 'jurikaca'
+    'USERPROFILE' => 'C:\\Users\\jurikaca'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\inventory_app\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\inventory_app\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\inventory_app\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\inventory_app\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\inventory_app\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1513279679.7859
+    'REQUEST_TIME' => 1513279679
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\inventory_app\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2017-12-14 20:29:30 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'user' already exists in C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\db\Command.php:994
+Stack trace:
+#0 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\db\Command.php(994): PDOStatement->execute()
+#1 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\db\Migration.php(300): yii\db\Command->execute()
+#2 C:\xampp\htdocs\inventory_app\console\migrations\m171214_192345_create_user_table.php(16): yii\db\Migration->createTable('user', Array)
+#3 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(726): m171214_192345_create_user_table->up()
+#4 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(200): yii\console\controllers\BaseMigrateController->migrateUp('m171214_192345_...')
+#5 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#6 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\console\Controller.php(135): yii\base\Controller->runAction('', Array)
+#9 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('', Array)
+#10 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#11 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#12 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#13 C:\xampp\htdocs\inventory_app\yii(27): yii\base\Application->run()
+#14 {main}
+
+Next yii\db\Exception: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'user' already exists
+The SQL being executed was: CREATE TABLE `user` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY
+) in C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\db\Schema.php:595
+Stack trace:
+#0 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\db\Command.php(1004): yii\db\Schema->convertException(Object(PDOException), 'CREATE TABLE `u...')
+#1 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\db\Migration.php(300): yii\db\Command->execute()
+#2 C:\xampp\htdocs\inventory_app\console\migrations\m171214_192345_create_user_table.php(16): yii\db\Migration->createTable('user', Array)
+#3 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(726): m171214_192345_create_user_table->up()
+#4 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(200): yii\console\controllers\BaseMigrateController->migrateUp('m171214_192345_...')
+#5 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#6 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\console\Controller.php(135): yii\base\Controller->runAction('', Array)
+#9 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('', Array)
+#10 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#11 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#12 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#13 C:\xampp\htdocs\inventory_app\yii(27): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => 42S01
+    [1] => 1050
+    [2] => Table 'user' already exists
+)
+
+2017-12-14 20:29:25 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\jurikaca\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'ADMINRG-L2UI9G1'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\jurikaca'
+    'LOCALAPPDATA' => 'C:\\Users\\jurikaca\\AppData\\Local'
+    'LOGONSERVER' => '\\\\ADMINRG-L2UI9G1'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\jurikaca\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\PuTTY\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\xampp\\php\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\jurikaca\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\jurikaca\\AppData\\Roaming\\npm;C:\\Users\\jurikaca\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3a09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\jurikaca\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\jurikaca\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'ADMINRG-L2UI9G1'
+    'USERDOMAIN_ROAMINGPROFILE' => 'ADMINRG-L2UI9G1'
+    'USERNAME' => 'jurikaca'
+    'USERPROFILE' => 'C:\\Users\\jurikaca'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\inventory_app\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\inventory_app\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\inventory_app\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\inventory_app\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\inventory_app\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1513279765.8045
+    'REQUEST_TIME' => 1513279765
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\inventory_app\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2017-12-14 20:30:32 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'user' already exists in C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\db\Command.php:994
+Stack trace:
+#0 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\db\Command.php(994): PDOStatement->execute()
+#1 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\db\Migration.php(300): yii\db\Command->execute()
+#2 C:\xampp\htdocs\inventory_app\console\migrations\m171214_192345_create_user_table.php(16): yii\db\Migration->createTable('user', Array)
+#3 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(726): m171214_192345_create_user_table->up()
+#4 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(200): yii\console\controllers\BaseMigrateController->migrateUp('m171214_192345_...')
+#5 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#6 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\console\Controller.php(135): yii\base\Controller->runAction('', Array)
+#9 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('', Array)
+#10 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#11 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#12 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#13 C:\xampp\htdocs\inventory_app\yii(27): yii\base\Application->run()
+#14 {main}
+
+Next yii\db\Exception: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'user' already exists
+The SQL being executed was: CREATE TABLE `user` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY
+) in C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\db\Schema.php:595
+Stack trace:
+#0 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\db\Command.php(1004): yii\db\Schema->convertException(Object(PDOException), 'CREATE TABLE `u...')
+#1 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\db\Migration.php(300): yii\db\Command->execute()
+#2 C:\xampp\htdocs\inventory_app\console\migrations\m171214_192345_create_user_table.php(16): yii\db\Migration->createTable('user', Array)
+#3 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(726): m171214_192345_create_user_table->up()
+#4 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(200): yii\console\controllers\BaseMigrateController->migrateUp('m171214_192345_...')
+#5 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#6 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\console\Controller.php(135): yii\base\Controller->runAction('', Array)
+#9 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('', Array)
+#10 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#11 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#12 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#13 C:\xampp\htdocs\inventory_app\yii(27): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => 42S01
+    [1] => 1050
+    [2] => Table 'user' already exists
+)
+
+2017-12-14 20:30:27 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\jurikaca\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'ADMINRG-L2UI9G1'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\jurikaca'
+    'LOCALAPPDATA' => 'C:\\Users\\jurikaca\\AppData\\Local'
+    'LOGONSERVER' => '\\\\ADMINRG-L2UI9G1'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\jurikaca\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\PuTTY\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\xampp\\php\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\jurikaca\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\jurikaca\\AppData\\Roaming\\npm;C:\\Users\\jurikaca\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3a09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\jurikaca\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\jurikaca\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'ADMINRG-L2UI9G1'
+    'USERDOMAIN_ROAMINGPROFILE' => 'ADMINRG-L2UI9G1'
+    'USERNAME' => 'jurikaca'
+    'USERPROFILE' => 'C:\\Users\\jurikaca'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'C:\\xampp\\htdocs\\inventory_app\\'
+    'PHP_SELF' => 'C:\\xampp\\htdocs\\inventory_app\\yii'
+    'SCRIPT_NAME' => 'C:\\xampp\\htdocs\\inventory_app\\yii'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\inventory_app\\yii'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\inventory_app\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1513279827.7875
+    'REQUEST_TIME' => 1513279827
+    'argv' => [
+        0 => 'C:\\xampp\\htdocs\\inventory_app\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]

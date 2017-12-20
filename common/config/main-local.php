@@ -3,7 +3,7 @@ return [
     'components' => [
         'db' => [
             'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=localhost;dbname=yii_advanced',
+            'dsn' => 'mysql:host=localhost;port=3308;dbname=inventory_app',
             'username' => 'root',
             'password' => '',
             'charset' => 'utf8',
