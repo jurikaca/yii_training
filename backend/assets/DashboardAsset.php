@@ -28,7 +28,7 @@ class DashboardAsset extends AssetBundle
     ];
     public $js = [
         'js/main.js',
-        'jquery/dist/jquery.min.js',
+//        'jquery/dist/jquery.min.js',
         'jquery-ui/jquery-ui.min.js',
         'bootstrap/dist/js/bootstrap.min.js',
         'raphael/raphael.min.js',

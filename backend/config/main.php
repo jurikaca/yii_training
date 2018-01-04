@@ -60,6 +60,12 @@ return [
             ],
         ],
         */
+        'urlManagerFrontend' => [
+            'class' => 'yii\web\urlManager',
+            'enablePrettyUrl' => true,
+            'showScriptName' => false,
+            'baseUrl' => 'http://localhost:8080/inventory_app/frontend/web/index.php',
+        ],
     ],
 //    'as beforRequest' => [ // component for before request event, to check if user is logged in
 //        'class' => 'backend\components\CheckIfLoggedIn',

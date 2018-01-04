@@ -89,7 +89,11 @@ class SiteController extends Controller
 
         $model = new LoginForm();
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
-            return $this->goBack();
+            if(Yii::$app->user->identity->role == 'admin'){ // if user is admin
+                return $this->redirect(Yii::$app->urlManagerBackend->createUrl(Yii::$app->urlManagerBackend->baseUrl));
+            }else{ // if user is not admin then redirect on the frontend
+                return $this->goBack();
+            }
         } else {
             return $this->render('login', [
                 'model' => $model,

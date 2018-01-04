@@ -17870,3 +17870,1331 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1513722824.899
     'REQUEST_TIME' => 1513722824
 ]
+2017-12-20 18:45:36 [::1][2][i6ocvunvugstvfgl2kj7aefelk][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: yii\grid\ActionColumn::attribute in C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\BaseObject.php:162
+Stack trace:
+#0 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\BaseYii.php(532): yii\base\BaseObject->__set('attribute', 'Actions')
+#1 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\BaseObject.php(106): yii\BaseYii::configure(Object(yii\grid\ActionColumn), Array)
+#2 [internal function]: yii\base\BaseObject->__construct(Array)
+#3 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\di\Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#4 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\grid\\Action...', Array, Array)
+#5 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\grid\\Action...', Array, Array)
+#6 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\grid\GridView.php(529): yii\BaseYii::createObject(Array)
+#7 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\grid\GridView.php(278): yii\grid\GridView->initColumns()
+#8 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\BaseObject.php(108): yii\grid\GridView->init()
+#9 [internal function]: yii\base\BaseObject->__construct(Array)
+#10 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\di\Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#11 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\grid\\GridVi...', Array, Array)
+#12 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\grid\\GridVi...', Array, Array)
+#13 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Widget.php(137): yii\BaseYii::createObject(Array)
+#14 C:\xampp\htdocs\inventory_app\backend\views\site\users.php(14): yii\base\Widget::widget(Array)
+#15 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\View.php(332): require('C:\\xampp\\htdocs...')
+#16 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#17 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(backend\controllers\SiteController))
+#18 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('users', Array, Object(backend\controllers\SiteController))
+#19 C:\xampp\htdocs\inventory_app\backend\controllers\SiteController.php(147): yii\base\Controller->render('users', Array)
+#20 [internal function]: backend\controllers\SiteController->actionUsers()
+#21 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#22 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#23 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('users', Array)
+#24 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/users', Array)
+#25 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#26 C:\xampp\htdocs\inventory_app\backend\web\index.php(17): yii\base\Application->run()
+#27 {main}
+2017-12-20 18:45:36 [::1][2][i6ocvunvugstvfgl2kj7aefelk][info][application] $_GET = [
+    'r' => 'site/users'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'h5pv6h72tepn4v3vdb6p15vsfa'
+    '_csrf-backend' => '7d1516ed21462ba0442d3abe49d40aedf8ea532fa71091021c0e6f69056634d1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"bHBGCPRC_hmOZ88Al1FwMWIYc3-uFnrD\";}'
+    '_csrf-frontend' => '8cb272ede1bcbeda0a63bf95364d281fcbd6f93af80b020b4d817e1108289bf4a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"xz5l1GJX7g3V4WAI0b5xSguHW2l4huIQ\";}'
+    'advanced-frontend' => 'sg1o75f4amdv2fpalefbau7eou'
+    '_identity-frontend' => 'eeea0d61ce94fdffc8dedc041807fe9e7ca6c8e0c1725313227f36cd695ef1b3a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:48:\"[\"2\",\"Vfsg114KUoG4qBf4Nz7gHNRqpBhIM7uS\",2592000]\";}'
+    'advanced-backend' => 'i6ocvunvugstvfgl2kj7aefelk'
+    '_identity-backend' => 'cc300650047d19912605f934fa156853bf16c4264c599c474c4fd7aa2184ecbba:2:{i:0;s:17:\"_identity-backend\";i:1;s:48:\"[\"2\",\"Vfsg114KUoG4qBf4Nz7gHNRqpBhIM7uS\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/inventory_app/backend/web/index.php?r=site/items'
+    '__id' => '2'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=h5pv6h72tepn4v3vdb6p15vsfa; _csrf-backend=7d1516ed21462ba0442d3abe49d40aedf8ea532fa71091021c0e6f69056634d1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22bHBGCPRC_hmOZ88Al1FwMWIYc3-uFnrD%22%3B%7D; _csrf-frontend=8cb272ede1bcbeda0a63bf95364d281fcbd6f93af80b020b4d817e1108289bf4a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22xz5l1GJX7g3V4WAI0b5xSguHW2l4huIQ%22%3B%7D; advanced-frontend=sg1o75f4amdv2fpalefbau7eou; _identity-frontend=eeea0d61ce94fdffc8dedc041807fe9e7ca6c8e0c1725313227f36cd695ef1b3a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A48%3A%22%5B%222%22%2C%22Vfsg114KUoG4qBf4Nz7gHNRqpBhIM7uS%22%2C2592000%5D%22%3B%7D; advanced-backend=i6ocvunvugstvfgl2kj7aefelk; _identity-backend=cc300650047d19912605f934fa156853bf16c4264c599c474c4fd7aa2184ecbba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A48%3A%22%5B%222%22%2C%22Vfsg114KUoG4qBf4Nz7gHNRqpBhIM7uS%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\PuTTY\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\xampp\\php\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\jurikaca\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\jurikaca\\AppData\\Roaming\\npm;C:\\Users\\jurikaca\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Win32) OpenSSL/1.0.2l PHP/7.1.9 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Win32) OpenSSL/1.0.2l PHP/7.1.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/inventory_app/backend/web/index.php'
+    'REMOTE_PORT' => '62891'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site/users'
+    'REQUEST_URI' => '/inventory_app/backend/web/index.php?r=site/users'
+    'SCRIPT_NAME' => '/inventory_app/backend/web/index.php'
+    'PHP_SELF' => '/inventory_app/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1513791936.118
+    'REQUEST_TIME' => 1513791936
+]
+2017-12-20 18:49:27 [::1][2][i6ocvunvugstvfgl2kj7aefelk][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: yii\grid\ActionColumn::attribute in C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\BaseObject.php:162
+Stack trace:
+#0 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\BaseYii.php(532): yii\base\BaseObject->__set('attribute', 'Actions')
+#1 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\BaseObject.php(106): yii\BaseYii::configure(Object(yii\grid\ActionColumn), Array)
+#2 [internal function]: yii\base\BaseObject->__construct(Array)
+#3 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\di\Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#4 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\grid\\Action...', Array, Array)
+#5 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\grid\\Action...', Array, Array)
+#6 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\grid\GridView.php(529): yii\BaseYii::createObject(Array)
+#7 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\grid\GridView.php(278): yii\grid\GridView->initColumns()
+#8 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\BaseObject.php(108): yii\grid\GridView->init()
+#9 [internal function]: yii\base\BaseObject->__construct(Array)
+#10 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\di\Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#11 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\grid\\GridVi...', Array, Array)
+#12 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\grid\\GridVi...', Array, Array)
+#13 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Widget.php(137): yii\BaseYii::createObject(Array)
+#14 C:\xampp\htdocs\inventory_app\backend\views\site\users.php(14): yii\base\Widget::widget(Array)
+#15 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\View.php(332): require('C:\\xampp\\htdocs...')
+#16 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#17 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(backend\controllers\SiteController))
+#18 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('users', Array, Object(backend\controllers\SiteController))
+#19 C:\xampp\htdocs\inventory_app\backend\controllers\SiteController.php(147): yii\base\Controller->render('users', Array)
+#20 [internal function]: backend\controllers\SiteController->actionUsers()
+#21 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#22 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#23 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('users', Array)
+#24 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/users', Array)
+#25 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#26 C:\xampp\htdocs\inventory_app\backend\web\index.php(17): yii\base\Application->run()
+#27 {main}
+2017-12-20 18:49:27 [::1][2][i6ocvunvugstvfgl2kj7aefelk][info][application] $_GET = [
+    'r' => 'site/users'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'h5pv6h72tepn4v3vdb6p15vsfa'
+    '_csrf-backend' => '7d1516ed21462ba0442d3abe49d40aedf8ea532fa71091021c0e6f69056634d1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"bHBGCPRC_hmOZ88Al1FwMWIYc3-uFnrD\";}'
+    '_csrf-frontend' => '8cb272ede1bcbeda0a63bf95364d281fcbd6f93af80b020b4d817e1108289bf4a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"xz5l1GJX7g3V4WAI0b5xSguHW2l4huIQ\";}'
+    'advanced-frontend' => 'sg1o75f4amdv2fpalefbau7eou'
+    '_identity-frontend' => 'eeea0d61ce94fdffc8dedc041807fe9e7ca6c8e0c1725313227f36cd695ef1b3a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:48:\"[\"2\",\"Vfsg114KUoG4qBf4Nz7gHNRqpBhIM7uS\",2592000]\";}'
+    'advanced-backend' => 'i6ocvunvugstvfgl2kj7aefelk'
+    '_identity-backend' => 'cc300650047d19912605f934fa156853bf16c4264c599c474c4fd7aa2184ecbba:2:{i:0;s:17:\"_identity-backend\";i:1;s:48:\"[\"2\",\"Vfsg114KUoG4qBf4Nz7gHNRqpBhIM7uS\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/inventory_app/backend/web/index.php?r=site/items'
+    '__id' => '2'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=h5pv6h72tepn4v3vdb6p15vsfa; _csrf-backend=7d1516ed21462ba0442d3abe49d40aedf8ea532fa71091021c0e6f69056634d1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22bHBGCPRC_hmOZ88Al1FwMWIYc3-uFnrD%22%3B%7D; _csrf-frontend=8cb272ede1bcbeda0a63bf95364d281fcbd6f93af80b020b4d817e1108289bf4a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22xz5l1GJX7g3V4WAI0b5xSguHW2l4huIQ%22%3B%7D; advanced-frontend=sg1o75f4amdv2fpalefbau7eou; _identity-frontend=eeea0d61ce94fdffc8dedc041807fe9e7ca6c8e0c1725313227f36cd695ef1b3a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A48%3A%22%5B%222%22%2C%22Vfsg114KUoG4qBf4Nz7gHNRqpBhIM7uS%22%2C2592000%5D%22%3B%7D; advanced-backend=i6ocvunvugstvfgl2kj7aefelk; _identity-backend=cc300650047d19912605f934fa156853bf16c4264c599c474c4fd7aa2184ecbba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A48%3A%22%5B%222%22%2C%22Vfsg114KUoG4qBf4Nz7gHNRqpBhIM7uS%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\PuTTY\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\xampp\\php\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\jurikaca\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\jurikaca\\AppData\\Roaming\\npm;C:\\Users\\jurikaca\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Win32) OpenSSL/1.0.2l PHP/7.1.9 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Win32) OpenSSL/1.0.2l PHP/7.1.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/inventory_app/backend/web/index.php'
+    'REMOTE_PORT' => '63102'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site/users'
+    'REQUEST_URI' => '/inventory_app/backend/web/index.php?r=site/users'
+    'SCRIPT_NAME' => '/inventory_app/backend/web/index.php'
+    'PHP_SELF' => '/inventory_app/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1513792167.367
+    'REQUEST_TIME' => 1513792167
+]
+2017-12-20 18:49:42 [::1][2][i6ocvunvugstvfgl2kj7aefelk][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: common\models\User::education in C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Component.php:148
+Stack trace:
+#0 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\db\BaseActiveRecord.php(288): yii\base\Component->__get('education')
+#1 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\helpers\BaseArrayHelper.php(209): yii\db\BaseActiveRecord->__get('education')
+#2 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\grid\DataColumn.php(226): yii\helpers\BaseArrayHelper::getValue(Object(common\models\User), 'education')
+#3 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\grid\DataColumn.php(238): yii\grid\DataColumn->getDataCellValue(Object(common\models\User), '2', 0)
+#4 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\grid\Column.php(111): yii\grid\DataColumn->renderDataCellContent(Object(common\models\User), '2', 0)
+#5 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\grid\GridView.php(502): yii\grid\Column->renderDataCell(Object(common\models\User), '2', 0)
+#6 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\grid\GridView.php(471): yii\grid\GridView->renderTableRow(Object(common\models\User), '2', 0)
+#7 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\grid\GridView.php(347): yii\grid\GridView->renderTableBody()
+#8 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\widgets\BaseListView.php(160): yii\grid\GridView->renderItems()
+#9 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\grid\GridView.php(316): yii\widgets\BaseListView->renderSection('{items}')
+#10 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\widgets\BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#11 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#12 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\widgets\BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#13 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\grid\GridView.php(291): yii\widgets\BaseListView->run()
+#14 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Widget.php(140): yii\grid\GridView->run()
+#15 C:\xampp\htdocs\inventory_app\backend\views\site\users.php(14): yii\base\Widget::widget(Array)
+#16 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\View.php(332): require('C:\\xampp\\htdocs...')
+#17 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#18 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(backend\controllers\SiteController))
+#19 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('users', Array, Object(backend\controllers\SiteController))
+#20 C:\xampp\htdocs\inventory_app\backend\controllers\SiteController.php(147): yii\base\Controller->render('users', Array)
+#21 [internal function]: backend\controllers\SiteController->actionUsers()
+#22 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#23 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#24 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('users', Array)
+#25 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/users', Array)
+#26 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#27 C:\xampp\htdocs\inventory_app\backend\web\index.php(17): yii\base\Application->run()
+#28 {main}
+2017-12-20 18:49:42 [::1][2][i6ocvunvugstvfgl2kj7aefelk][info][application] $_GET = [
+    'r' => 'site/users'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'h5pv6h72tepn4v3vdb6p15vsfa'
+    '_csrf-backend' => '7d1516ed21462ba0442d3abe49d40aedf8ea532fa71091021c0e6f69056634d1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"bHBGCPRC_hmOZ88Al1FwMWIYc3-uFnrD\";}'
+    '_csrf-frontend' => '8cb272ede1bcbeda0a63bf95364d281fcbd6f93af80b020b4d817e1108289bf4a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"xz5l1GJX7g3V4WAI0b5xSguHW2l4huIQ\";}'
+    'advanced-frontend' => 'sg1o75f4amdv2fpalefbau7eou'
+    '_identity-frontend' => 'eeea0d61ce94fdffc8dedc041807fe9e7ca6c8e0c1725313227f36cd695ef1b3a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:48:\"[\"2\",\"Vfsg114KUoG4qBf4Nz7gHNRqpBhIM7uS\",2592000]\";}'
+    'advanced-backend' => 'i6ocvunvugstvfgl2kj7aefelk'
+    '_identity-backend' => 'cc300650047d19912605f934fa156853bf16c4264c599c474c4fd7aa2184ecbba:2:{i:0;s:17:\"_identity-backend\";i:1;s:48:\"[\"2\",\"Vfsg114KUoG4qBf4Nz7gHNRqpBhIM7uS\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/inventory_app/backend/web/index.php?r=site/items'
+    '__id' => '2'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=h5pv6h72tepn4v3vdb6p15vsfa; _csrf-backend=7d1516ed21462ba0442d3abe49d40aedf8ea532fa71091021c0e6f69056634d1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22bHBGCPRC_hmOZ88Al1FwMWIYc3-uFnrD%22%3B%7D; _csrf-frontend=8cb272ede1bcbeda0a63bf95364d281fcbd6f93af80b020b4d817e1108289bf4a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22xz5l1GJX7g3V4WAI0b5xSguHW2l4huIQ%22%3B%7D; advanced-frontend=sg1o75f4amdv2fpalefbau7eou; _identity-frontend=eeea0d61ce94fdffc8dedc041807fe9e7ca6c8e0c1725313227f36cd695ef1b3a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A48%3A%22%5B%222%22%2C%22Vfsg114KUoG4qBf4Nz7gHNRqpBhIM7uS%22%2C2592000%5D%22%3B%7D; advanced-backend=i6ocvunvugstvfgl2kj7aefelk; _identity-backend=cc300650047d19912605f934fa156853bf16c4264c599c474c4fd7aa2184ecbba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A48%3A%22%5B%222%22%2C%22Vfsg114KUoG4qBf4Nz7gHNRqpBhIM7uS%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\PuTTY\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\xampp\\php\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\jurikaca\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\jurikaca\\AppData\\Roaming\\npm;C:\\Users\\jurikaca\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Win32) OpenSSL/1.0.2l PHP/7.1.9 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Win32) OpenSSL/1.0.2l PHP/7.1.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/inventory_app/backend/web/index.php'
+    'REMOTE_PORT' => '63137'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site/users'
+    'REQUEST_URI' => '/inventory_app/backend/web/index.php?r=site/users'
+    'SCRIPT_NAME' => '/inventory_app/backend/web/index.php'
+    'PHP_SELF' => '/inventory_app/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1513792182.432
+    'REQUEST_TIME' => 1513792182
+]
+2017-12-20 18:55:46 [::1][2][i6ocvunvugstvfgl2kj7aefelk][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: common\models\User::s_id in C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Component.php:148
+Stack trace:
+#0 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\db\BaseActiveRecord.php(288): yii\base\Component->__get('s_id')
+#1 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\helpers\BaseHtml.php(2121): yii\db\BaseActiveRecord->__get('s_id')
+#2 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\helpers\BaseHtml.php(1729): yii\helpers\BaseHtml::getAttributeValue(Object(common\models\User), 's_id')
+#3 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\helpers\BaseHtml.php(1567): yii\helpers\BaseHtml::activeListInput('dropDownList', Object(common\models\User), 's_id', Array, Array)
+#4 C:\xampp\htdocs\inventory_app\backend\views\site\users.php(32): yii\helpers\BaseHtml::activeDropDownList(Object(common\models\User), 's_id', Array)
+#5 [internal function]: yii\base\View->{closure}(Object(common\models\User), '2', 0, Object(yii\grid\DataColumn))
+#6 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\grid\DataColumn.php(224): call_user_func(Object(Closure), Object(common\models\User), '2', 0, Object(yii\grid\DataColumn))
+#7 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\grid\DataColumn.php(238): yii\grid\DataColumn->getDataCellValue(Object(common\models\User), '2', 0)
+#8 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\grid\Column.php(111): yii\grid\DataColumn->renderDataCellContent(Object(common\models\User), '2', 0)
+#9 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\grid\GridView.php(502): yii\grid\Column->renderDataCell(Object(common\models\User), '2', 0)
+#10 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\grid\GridView.php(471): yii\grid\GridView->renderTableRow(Object(common\models\User), '2', 0)
+#11 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\grid\GridView.php(347): yii\grid\GridView->renderTableBody()
+#12 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\widgets\BaseListView.php(160): yii\grid\GridView->renderItems()
+#13 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\grid\GridView.php(316): yii\widgets\BaseListView->renderSection('{items}')
+#14 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\widgets\BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#15 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#16 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\widgets\BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#17 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\grid\GridView.php(291): yii\widgets\BaseListView->run()
+#18 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Widget.php(140): yii\grid\GridView->run()
+#19 C:\xampp\htdocs\inventory_app\backend\views\site\users.php(14): yii\base\Widget::widget(Array)
+#20 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\View.php(332): require('C:\\xampp\\htdocs...')
+#21 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#22 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(backend\controllers\SiteController))
+#23 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('users', Array, Object(backend\controllers\SiteController))
+#24 C:\xampp\htdocs\inventory_app\backend\controllers\SiteController.php(147): yii\base\Controller->render('users', Array)
+#25 [internal function]: backend\controllers\SiteController->actionUsers()
+#26 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#27 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#28 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('users', Array)
+#29 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/users', Array)
+#30 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#31 C:\xampp\htdocs\inventory_app\backend\web\index.php(17): yii\base\Application->run()
+#32 {main}
+2017-12-20 18:55:46 [::1][2][i6ocvunvugstvfgl2kj7aefelk][info][application] $_GET = [
+    'r' => 'site/users'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'h5pv6h72tepn4v3vdb6p15vsfa'
+    '_csrf-backend' => '7d1516ed21462ba0442d3abe49d40aedf8ea532fa71091021c0e6f69056634d1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"bHBGCPRC_hmOZ88Al1FwMWIYc3-uFnrD\";}'
+    '_csrf-frontend' => '8cb272ede1bcbeda0a63bf95364d281fcbd6f93af80b020b4d817e1108289bf4a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"xz5l1GJX7g3V4WAI0b5xSguHW2l4huIQ\";}'
+    'advanced-frontend' => 'sg1o75f4amdv2fpalefbau7eou'
+    '_identity-frontend' => 'eeea0d61ce94fdffc8dedc041807fe9e7ca6c8e0c1725313227f36cd695ef1b3a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:48:\"[\"2\",\"Vfsg114KUoG4qBf4Nz7gHNRqpBhIM7uS\",2592000]\";}'
+    'advanced-backend' => 'i6ocvunvugstvfgl2kj7aefelk'
+    '_identity-backend' => 'cc300650047d19912605f934fa156853bf16c4264c599c474c4fd7aa2184ecbba:2:{i:0;s:17:\"_identity-backend\";i:1;s:48:\"[\"2\",\"Vfsg114KUoG4qBf4Nz7gHNRqpBhIM7uS\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/inventory_app/backend/web/index.php?r=site/items'
+    '__id' => '2'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=h5pv6h72tepn4v3vdb6p15vsfa; _csrf-backend=7d1516ed21462ba0442d3abe49d40aedf8ea532fa71091021c0e6f69056634d1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22bHBGCPRC_hmOZ88Al1FwMWIYc3-uFnrD%22%3B%7D; _csrf-frontend=8cb272ede1bcbeda0a63bf95364d281fcbd6f93af80b020b4d817e1108289bf4a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22xz5l1GJX7g3V4WAI0b5xSguHW2l4huIQ%22%3B%7D; advanced-frontend=sg1o75f4amdv2fpalefbau7eou; _identity-frontend=eeea0d61ce94fdffc8dedc041807fe9e7ca6c8e0c1725313227f36cd695ef1b3a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A48%3A%22%5B%222%22%2C%22Vfsg114KUoG4qBf4Nz7gHNRqpBhIM7uS%22%2C2592000%5D%22%3B%7D; advanced-backend=i6ocvunvugstvfgl2kj7aefelk; _identity-backend=cc300650047d19912605f934fa156853bf16c4264c599c474c4fd7aa2184ecbba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A48%3A%22%5B%222%22%2C%22Vfsg114KUoG4qBf4Nz7gHNRqpBhIM7uS%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\PuTTY\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\xampp\\php\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\jurikaca\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\jurikaca\\AppData\\Roaming\\npm;C:\\Users\\jurikaca\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Win32) OpenSSL/1.0.2l PHP/7.1.9 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Win32) OpenSSL/1.0.2l PHP/7.1.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/inventory_app/backend/web/index.php'
+    'REMOTE_PORT' => '63407'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site/users'
+    'REQUEST_URI' => '/inventory_app/backend/web/index.php?r=site/users'
+    'SCRIPT_NAME' => '/inventory_app/backend/web/index.php'
+    'PHP_SELF' => '/inventory_app/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1513792546.016
+    'REQUEST_TIME' => 1513792546
+]
+2017-12-20 19:31:15 [::1][2][i6ocvunvugstvfgl2kj7aefelk][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: You are not allowed to perform this action. in C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\filters\AccessControl.php:158
+Stack trace:
+#0 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\filters\AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Component.php(557): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Controller.php(274): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\xampp\htdocs\inventory_app\backend\controllers\SiteController.php(61): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Controller.php(155): backend\controllers\SiteController->beforeAction(Object(yii\base\InlineAction))
+#8 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('change_user_rol...', Array)
+#9 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/change_use...', Array)
+#10 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\xampp\htdocs\inventory_app\backend\web\index.php(17): yii\base\Application->run()
+#12 {main}
+2017-12-20 19:31:15 [::1][2][i6ocvunvugstvfgl2kj7aefelk][info][application] $_GET = [
+    'r' => 'site/change_user_role'
+]
+
+$_POST = [
+    'userId' => '3'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'h5pv6h72tepn4v3vdb6p15vsfa'
+    '_csrf-backend' => '7d1516ed21462ba0442d3abe49d40aedf8ea532fa71091021c0e6f69056634d1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"bHBGCPRC_hmOZ88Al1FwMWIYc3-uFnrD\";}'
+    '_csrf-frontend' => '8cb272ede1bcbeda0a63bf95364d281fcbd6f93af80b020b4d817e1108289bf4a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"xz5l1GJX7g3V4WAI0b5xSguHW2l4huIQ\";}'
+    'advanced-frontend' => 'sg1o75f4amdv2fpalefbau7eou'
+    '_identity-frontend' => 'eeea0d61ce94fdffc8dedc041807fe9e7ca6c8e0c1725313227f36cd695ef1b3a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:48:\"[\"2\",\"Vfsg114KUoG4qBf4Nz7gHNRqpBhIM7uS\",2592000]\";}'
+    'advanced-backend' => 'i6ocvunvugstvfgl2kj7aefelk'
+    '_identity-backend' => 'cc300650047d19912605f934fa156853bf16c4264c599c474c4fd7aa2184ecbba:2:{i:0;s:17:\"_identity-backend\";i:1;s:48:\"[\"2\",\"Vfsg114KUoG4qBf4Nz7gHNRqpBhIM7uS\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/inventory_app/backend/web/index.php?r=site/items'
+    '__id' => '2'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '8'
+    'HTTP_ORIGIN' => 'http://localhost:8080'
+    'HTTP_X_CSRF_TOKEN' => 'bUrKYfHbC3TqHPzJOh85BsOik7ZMhCVzZkoP1Q3Ju3APAogmsotZN7V0kYZgJwFHr5PVwQHTbCoFeSKgS6fJNA=='
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost:8080/inventory_app/backend/web/index.php?r=site/users'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=h5pv6h72tepn4v3vdb6p15vsfa; _csrf-backend=7d1516ed21462ba0442d3abe49d40aedf8ea532fa71091021c0e6f69056634d1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22bHBGCPRC_hmOZ88Al1FwMWIYc3-uFnrD%22%3B%7D; _csrf-frontend=8cb272ede1bcbeda0a63bf95364d281fcbd6f93af80b020b4d817e1108289bf4a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22xz5l1GJX7g3V4WAI0b5xSguHW2l4huIQ%22%3B%7D; advanced-frontend=sg1o75f4amdv2fpalefbau7eou; _identity-frontend=eeea0d61ce94fdffc8dedc041807fe9e7ca6c8e0c1725313227f36cd695ef1b3a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A48%3A%22%5B%222%22%2C%22Vfsg114KUoG4qBf4Nz7gHNRqpBhIM7uS%22%2C2592000%5D%22%3B%7D; advanced-backend=i6ocvunvugstvfgl2kj7aefelk; _identity-backend=cc300650047d19912605f934fa156853bf16c4264c599c474c4fd7aa2184ecbba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A48%3A%22%5B%222%22%2C%22Vfsg114KUoG4qBf4Nz7gHNRqpBhIM7uS%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\PuTTY\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\xampp\\php\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\jurikaca\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\jurikaca\\AppData\\Roaming\\npm;C:\\Users\\jurikaca\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Win32) OpenSSL/1.0.2l PHP/7.1.9 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Win32) OpenSSL/1.0.2l PHP/7.1.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/inventory_app/backend/web/index.php'
+    'REMOTE_PORT' => '50129'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site/change_user_role'
+    'REQUEST_URI' => '/inventory_app/backend/web/index.php?r=site/change_user_role'
+    'SCRIPT_NAME' => '/inventory_app/backend/web/index.php'
+    'PHP_SELF' => '/inventory_app/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1513794675.706
+    'REQUEST_TIME' => 1513794675
+]
+2017-12-20 19:31:25 [::1][2][i6ocvunvugstvfgl2kj7aefelk][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: You are not allowed to perform this action. in C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\filters\AccessControl.php:158
+Stack trace:
+#0 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\filters\AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Component.php(557): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Controller.php(274): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\xampp\htdocs\inventory_app\backend\controllers\SiteController.php(61): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Controller.php(155): backend\controllers\SiteController->beforeAction(Object(yii\base\InlineAction))
+#8 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('change_user_rol...', Array)
+#9 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/change_use...', Array)
+#10 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\xampp\htdocs\inventory_app\backend\web\index.php(17): yii\base\Application->run()
+#12 {main}
+2017-12-20 19:31:25 [::1][2][i6ocvunvugstvfgl2kj7aefelk][info][application] $_GET = [
+    'r' => 'site/change_user_role'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'h5pv6h72tepn4v3vdb6p15vsfa'
+    '_csrf-backend' => '7d1516ed21462ba0442d3abe49d40aedf8ea532fa71091021c0e6f69056634d1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"bHBGCPRC_hmOZ88Al1FwMWIYc3-uFnrD\";}'
+    '_csrf-frontend' => '8cb272ede1bcbeda0a63bf95364d281fcbd6f93af80b020b4d817e1108289bf4a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"xz5l1GJX7g3V4WAI0b5xSguHW2l4huIQ\";}'
+    'advanced-frontend' => 'sg1o75f4amdv2fpalefbau7eou'
+    '_identity-frontend' => 'eeea0d61ce94fdffc8dedc041807fe9e7ca6c8e0c1725313227f36cd695ef1b3a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:48:\"[\"2\",\"Vfsg114KUoG4qBf4Nz7gHNRqpBhIM7uS\",2592000]\";}'
+    'advanced-backend' => 'i6ocvunvugstvfgl2kj7aefelk'
+    '_identity-backend' => 'cc300650047d19912605f934fa156853bf16c4264c599c474c4fd7aa2184ecbba:2:{i:0;s:17:\"_identity-backend\";i:1;s:48:\"[\"2\",\"Vfsg114KUoG4qBf4Nz7gHNRqpBhIM7uS\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/inventory_app/backend/web/index.php?r=site/items'
+    '__id' => '2'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=h5pv6h72tepn4v3vdb6p15vsfa; _csrf-backend=7d1516ed21462ba0442d3abe49d40aedf8ea532fa71091021c0e6f69056634d1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22bHBGCPRC_hmOZ88Al1FwMWIYc3-uFnrD%22%3B%7D; _csrf-frontend=8cb272ede1bcbeda0a63bf95364d281fcbd6f93af80b020b4d817e1108289bf4a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22xz5l1GJX7g3V4WAI0b5xSguHW2l4huIQ%22%3B%7D; advanced-frontend=sg1o75f4amdv2fpalefbau7eou; _identity-frontend=eeea0d61ce94fdffc8dedc041807fe9e7ca6c8e0c1725313227f36cd695ef1b3a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A48%3A%22%5B%222%22%2C%22Vfsg114KUoG4qBf4Nz7gHNRqpBhIM7uS%22%2C2592000%5D%22%3B%7D; advanced-backend=i6ocvunvugstvfgl2kj7aefelk; _identity-backend=cc300650047d19912605f934fa156853bf16c4264c599c474c4fd7aa2184ecbba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A48%3A%22%5B%222%22%2C%22Vfsg114KUoG4qBf4Nz7gHNRqpBhIM7uS%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\PuTTY\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\xampp\\php\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\jurikaca\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\jurikaca\\AppData\\Roaming\\npm;C:\\Users\\jurikaca\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Win32) OpenSSL/1.0.2l PHP/7.1.9 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Win32) OpenSSL/1.0.2l PHP/7.1.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/inventory_app/backend/web/index.php'
+    'REMOTE_PORT' => '50164'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site/change_user_role'
+    'REQUEST_URI' => '/inventory_app/backend/web/index.php?r=site/change_user_role'
+    'SCRIPT_NAME' => '/inventory_app/backend/web/index.php'
+    'PHP_SELF' => '/inventory_app/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1513794685.345
+    'REQUEST_TIME' => 1513794685
+]
+2017-12-20 19:42:55 [::1][2][i6ocvunvugstvfgl2kj7aefelk][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: You are not allowed to perform this action. in C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\filters\AccessControl.php:158
+Stack trace:
+#0 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\filters\AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Component.php(557): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Controller.php(274): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\xampp\htdocs\inventory_app\backend\controllers\SiteController.php(61): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Controller.php(155): backend\controllers\SiteController->beforeAction(Object(yii\base\InlineAction))
+#8 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('change_user_rol...', Array)
+#9 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/change_use...', Array)
+#10 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\xampp\htdocs\inventory_app\backend\web\index.php(17): yii\base\Application->run()
+#12 {main}
+2017-12-20 19:42:52 [::1][2][i6ocvunvugstvfgl2kj7aefelk][info][application] $_GET = [
+    'r' => 'site/change_user_role'
+]
+
+$_POST = [
+    'userId' => '3'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'h5pv6h72tepn4v3vdb6p15vsfa'
+    '_csrf-backend' => '7d1516ed21462ba0442d3abe49d40aedf8ea532fa71091021c0e6f69056634d1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"bHBGCPRC_hmOZ88Al1FwMWIYc3-uFnrD\";}'
+    '_csrf-frontend' => '8cb272ede1bcbeda0a63bf95364d281fcbd6f93af80b020b4d817e1108289bf4a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"xz5l1GJX7g3V4WAI0b5xSguHW2l4huIQ\";}'
+    'advanced-frontend' => 'sg1o75f4amdv2fpalefbau7eou'
+    '_identity-frontend' => 'eeea0d61ce94fdffc8dedc041807fe9e7ca6c8e0c1725313227f36cd695ef1b3a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:48:\"[\"2\",\"Vfsg114KUoG4qBf4Nz7gHNRqpBhIM7uS\",2592000]\";}'
+    'advanced-backend' => 'i6ocvunvugstvfgl2kj7aefelk'
+    '_identity-backend' => 'cc300650047d19912605f934fa156853bf16c4264c599c474c4fd7aa2184ecbba:2:{i:0;s:17:\"_identity-backend\";i:1;s:48:\"[\"2\",\"Vfsg114KUoG4qBf4Nz7gHNRqpBhIM7uS\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/inventory_app/backend/web/index.php?r=site/items'
+    '__id' => '2'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '8'
+    'HTTP_ORIGIN' => 'http://localhost:8080'
+    'HTTP_X_CSRF_TOKEN' => 'bUrKYfHbC3TqHPzJOh85BsOik7ZMhCVzZkoP1Q3Ju3APAogmsotZN7V0kYZgJwFHr5PVwQHTbCoFeSKgS6fJNA=='
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost:8080/inventory_app/backend/web/index.php?r=site/users'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=h5pv6h72tepn4v3vdb6p15vsfa; _csrf-backend=7d1516ed21462ba0442d3abe49d40aedf8ea532fa71091021c0e6f69056634d1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22bHBGCPRC_hmOZ88Al1FwMWIYc3-uFnrD%22%3B%7D; _csrf-frontend=8cb272ede1bcbeda0a63bf95364d281fcbd6f93af80b020b4d817e1108289bf4a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22xz5l1GJX7g3V4WAI0b5xSguHW2l4huIQ%22%3B%7D; advanced-frontend=sg1o75f4amdv2fpalefbau7eou; _identity-frontend=eeea0d61ce94fdffc8dedc041807fe9e7ca6c8e0c1725313227f36cd695ef1b3a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A48%3A%22%5B%222%22%2C%22Vfsg114KUoG4qBf4Nz7gHNRqpBhIM7uS%22%2C2592000%5D%22%3B%7D; advanced-backend=i6ocvunvugstvfgl2kj7aefelk; _identity-backend=cc300650047d19912605f934fa156853bf16c4264c599c474c4fd7aa2184ecbba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A48%3A%22%5B%222%22%2C%22Vfsg114KUoG4qBf4Nz7gHNRqpBhIM7uS%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\PuTTY\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\xampp\\php\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\jurikaca\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\jurikaca\\AppData\\Roaming\\npm;C:\\Users\\jurikaca\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Win32) OpenSSL/1.0.2l PHP/7.1.9 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Win32) OpenSSL/1.0.2l PHP/7.1.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/inventory_app/backend/web/index.php'
+    'REMOTE_PORT' => '51681'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site/change_user_role'
+    'REQUEST_URI' => '/inventory_app/backend/web/index.php?r=site/change_user_role'
+    'SCRIPT_NAME' => '/inventory_app/backend/web/index.php'
+    'PHP_SELF' => '/inventory_app/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1513795372.889
+    'REQUEST_TIME' => 1513795372
+]
+2017-12-20 19:43:03 [::1][2][i6ocvunvugstvfgl2kj7aefelk][error][yii\web\HttpException:403] yii\web\ForbiddenHttpException: You are not allowed to perform this action. in C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\filters\AccessControl.php:158
+Stack trace:
+#0 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\filters\AccessControl.php(140): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Component.php(557): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Controller.php(274): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\xampp\htdocs\inventory_app\backend\controllers\SiteController.php(61): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Controller.php(155): backend\controllers\SiteController->beforeAction(Object(yii\base\InlineAction))
+#8 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('change_user_rol...', Array)
+#9 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/change_use...', Array)
+#10 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\xampp\htdocs\inventory_app\backend\web\index.php(17): yii\base\Application->run()
+#12 {main}
+2017-12-20 19:43:03 [::1][2][i6ocvunvugstvfgl2kj7aefelk][info][application] $_GET = [
+    'r' => 'site/change_user_role'
+]
+
+$_POST = [
+    'userId' => '3'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'h5pv6h72tepn4v3vdb6p15vsfa'
+    '_csrf-backend' => '7d1516ed21462ba0442d3abe49d40aedf8ea532fa71091021c0e6f69056634d1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"bHBGCPRC_hmOZ88Al1FwMWIYc3-uFnrD\";}'
+    '_csrf-frontend' => '8cb272ede1bcbeda0a63bf95364d281fcbd6f93af80b020b4d817e1108289bf4a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"xz5l1GJX7g3V4WAI0b5xSguHW2l4huIQ\";}'
+    'advanced-frontend' => 'sg1o75f4amdv2fpalefbau7eou'
+    '_identity-frontend' => 'eeea0d61ce94fdffc8dedc041807fe9e7ca6c8e0c1725313227f36cd695ef1b3a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:48:\"[\"2\",\"Vfsg114KUoG4qBf4Nz7gHNRqpBhIM7uS\",2592000]\";}'
+    'advanced-backend' => 'i6ocvunvugstvfgl2kj7aefelk'
+    '_identity-backend' => 'cc300650047d19912605f934fa156853bf16c4264c599c474c4fd7aa2184ecbba:2:{i:0;s:17:\"_identity-backend\";i:1;s:48:\"[\"2\",\"Vfsg114KUoG4qBf4Nz7gHNRqpBhIM7uS\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/inventory_app/backend/web/index.php?r=site/items'
+    '__id' => '2'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '8'
+    'HTTP_ORIGIN' => 'http://localhost:8080'
+    'HTTP_X_CSRF_TOKEN' => 'rxJHqzk-Lk7QcqDfaBANH6evYhmmwPCualDQC82eUkHNWgXsem58DY8azZAyKDVey54kbuuXufcJY_1-i_AgBQ=='
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_REFERER' => 'http://localhost:8080/inventory_app/backend/web/index.php?r=site/users'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=h5pv6h72tepn4v3vdb6p15vsfa; _csrf-backend=7d1516ed21462ba0442d3abe49d40aedf8ea532fa71091021c0e6f69056634d1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22bHBGCPRC_hmOZ88Al1FwMWIYc3-uFnrD%22%3B%7D; _csrf-frontend=8cb272ede1bcbeda0a63bf95364d281fcbd6f93af80b020b4d817e1108289bf4a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22xz5l1GJX7g3V4WAI0b5xSguHW2l4huIQ%22%3B%7D; advanced-frontend=sg1o75f4amdv2fpalefbau7eou; _identity-frontend=eeea0d61ce94fdffc8dedc041807fe9e7ca6c8e0c1725313227f36cd695ef1b3a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A48%3A%22%5B%222%22%2C%22Vfsg114KUoG4qBf4Nz7gHNRqpBhIM7uS%22%2C2592000%5D%22%3B%7D; advanced-backend=i6ocvunvugstvfgl2kj7aefelk; _identity-backend=cc300650047d19912605f934fa156853bf16c4264c599c474c4fd7aa2184ecbba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A48%3A%22%5B%222%22%2C%22Vfsg114KUoG4qBf4Nz7gHNRqpBhIM7uS%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\PuTTY\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\xampp\\php\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\jurikaca\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\jurikaca\\AppData\\Roaming\\npm;C:\\Users\\jurikaca\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Win32) OpenSSL/1.0.2l PHP/7.1.9 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Win32) OpenSSL/1.0.2l PHP/7.1.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/inventory_app/backend/web/index.php'
+    'REMOTE_PORT' => '51702'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site/change_user_role'
+    'REQUEST_URI' => '/inventory_app/backend/web/index.php?r=site/change_user_role'
+    'SCRIPT_NAME' => '/inventory_app/backend/web/index.php'
+    'PHP_SELF' => '/inventory_app/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1513795383.499
+    'REQUEST_TIME' => 1513795383
+]
+2017-12-20 19:54:07 [::1][2][i6ocvunvugstvfgl2kj7aefelk][error][yii\base\ErrorException:4096] yii\base\ErrorException: Object of class common\models\User could not be converted to string in C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\helpers\BaseHtml.php:151
+Stack trace:
+#0 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\helpers\BaseHtml.php(151): yii\base\ErrorHandler->handleError(4096, 'Object of class...', 'C:\\xampp\\htdocs...', 151, Array)
+#1 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\helpers\BaseHtml.php(415): yii\helpers\BaseHtml::tag('a', Object(common\models\User), Array)
+#2 C:\xampp\htdocs\inventory_app\backend\views\site\users.php(49): yii\helpers\BaseHtml::a(Object(common\models\User), 'id', Array)
+#3 [internal function]: yii\base\View->{closure}(Object(common\models\User), '3', 0, Object(yii\grid\DataColumn))
+#4 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\grid\DataColumn.php(224): call_user_func(Object(Closure), Object(common\models\User), '3', 0, Object(yii\grid\DataColumn))
+#5 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\grid\DataColumn.php(238): yii\grid\DataColumn->getDataCellValue(Object(common\models\User), '3', 0)
+#6 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\grid\Column.php(111): yii\grid\DataColumn->renderDataCellContent(Object(common\models\User), '3', 0)
+#7 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\grid\GridView.php(502): yii\grid\Column->renderDataCell(Object(common\models\User), '3', 0)
+#8 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\grid\GridView.php(471): yii\grid\GridView->renderTableRow(Object(common\models\User), '3', 0)
+#9 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\grid\GridView.php(347): yii\grid\GridView->renderTableBody()
+#10 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\widgets\BaseListView.php(160): yii\grid\GridView->renderItems()
+#11 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\grid\GridView.php(316): yii\widgets\BaseListView->renderSection('{items}')
+#12 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\widgets\BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#13 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#14 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\widgets\BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#15 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\grid\GridView.php(291): yii\widgets\BaseListView->run()
+#16 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Widget.php(140): yii\grid\GridView->run()
+#17 C:\xampp\htdocs\inventory_app\backend\views\site\users.php(53): yii\base\Widget::widget(Array)
+#18 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\View.php(332): require('C:\\xampp\\htdocs...')
+#19 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#20 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(backend\controllers\SiteController))
+#21 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('users', Array, Object(backend\controllers\SiteController))
+#22 C:\xampp\htdocs\inventory_app\backend\controllers\SiteController.php(148): yii\base\Controller->render('users', Array)
+#23 [internal function]: backend\controllers\SiteController->actionUsers()
+#24 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#25 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#26 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('users', Array)
+#27 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/users', Array)
+#28 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#29 C:\xampp\htdocs\inventory_app\backend\web\index.php(17): yii\base\Application->run()
+#30 {main}
+2017-12-20 19:54:07 [::1][2][i6ocvunvugstvfgl2kj7aefelk][info][application] $_GET = [
+    'r' => 'site/users'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'h5pv6h72tepn4v3vdb6p15vsfa'
+    '_csrf-backend' => '7d1516ed21462ba0442d3abe49d40aedf8ea532fa71091021c0e6f69056634d1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"bHBGCPRC_hmOZ88Al1FwMWIYc3-uFnrD\";}'
+    '_csrf-frontend' => '8cb272ede1bcbeda0a63bf95364d281fcbd6f93af80b020b4d817e1108289bf4a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"xz5l1GJX7g3V4WAI0b5xSguHW2l4huIQ\";}'
+    'advanced-frontend' => 'sg1o75f4amdv2fpalefbau7eou'
+    '_identity-frontend' => 'eeea0d61ce94fdffc8dedc041807fe9e7ca6c8e0c1725313227f36cd695ef1b3a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:48:\"[\"2\",\"Vfsg114KUoG4qBf4Nz7gHNRqpBhIM7uS\",2592000]\";}'
+    'advanced-backend' => 'i6ocvunvugstvfgl2kj7aefelk'
+    '_identity-backend' => 'cc300650047d19912605f934fa156853bf16c4264c599c474c4fd7aa2184ecbba:2:{i:0;s:17:\"_identity-backend\";i:1;s:48:\"[\"2\",\"Vfsg114KUoG4qBf4Nz7gHNRqpBhIM7uS\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/inventory_app/backend/web/index.php?r=site/items'
+    '__id' => '2'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=h5pv6h72tepn4v3vdb6p15vsfa; _csrf-backend=7d1516ed21462ba0442d3abe49d40aedf8ea532fa71091021c0e6f69056634d1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22bHBGCPRC_hmOZ88Al1FwMWIYc3-uFnrD%22%3B%7D; _csrf-frontend=8cb272ede1bcbeda0a63bf95364d281fcbd6f93af80b020b4d817e1108289bf4a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22xz5l1GJX7g3V4WAI0b5xSguHW2l4huIQ%22%3B%7D; advanced-frontend=sg1o75f4amdv2fpalefbau7eou; _identity-frontend=eeea0d61ce94fdffc8dedc041807fe9e7ca6c8e0c1725313227f36cd695ef1b3a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A48%3A%22%5B%222%22%2C%22Vfsg114KUoG4qBf4Nz7gHNRqpBhIM7uS%22%2C2592000%5D%22%3B%7D; advanced-backend=i6ocvunvugstvfgl2kj7aefelk; _identity-backend=cc300650047d19912605f934fa156853bf16c4264c599c474c4fd7aa2184ecbba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A48%3A%22%5B%222%22%2C%22Vfsg114KUoG4qBf4Nz7gHNRqpBhIM7uS%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\PuTTY\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\xampp\\php\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\jurikaca\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\jurikaca\\AppData\\Roaming\\npm;C:\\Users\\jurikaca\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Win32) OpenSSL/1.0.2l PHP/7.1.9 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Win32) OpenSSL/1.0.2l PHP/7.1.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/inventory_app/backend/web/index.php'
+    'REMOTE_PORT' => '52800'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site/users'
+    'REQUEST_URI' => '/inventory_app/backend/web/index.php?r=site/users'
+    'SCRIPT_NAME' => '/inventory_app/backend/web/index.php'
+    'PHP_SELF' => '/inventory_app/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1513796047.236
+    'REQUEST_TIME' => 1513796047
+]
+2017-12-20 19:56:09 [::1][2][i6ocvunvugstvfgl2kj7aefelk][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/signup in C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Controller.php:128
+Stack trace:
+#0 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('signup', Array)
+#1 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#2 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\xampp\htdocs\inventory_app\backend\web\index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\inventory_app\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-12-20 19:56:08 [::1][2][i6ocvunvugstvfgl2kj7aefelk][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'h5pv6h72tepn4v3vdb6p15vsfa'
+    '_csrf-backend' => '7d1516ed21462ba0442d3abe49d40aedf8ea532fa71091021c0e6f69056634d1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"bHBGCPRC_hmOZ88Al1FwMWIYc3-uFnrD\";}'
+    '_csrf-frontend' => '8cb272ede1bcbeda0a63bf95364d281fcbd6f93af80b020b4d817e1108289bf4a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"xz5l1GJX7g3V4WAI0b5xSguHW2l4huIQ\";}'
+    'advanced-frontend' => 'sg1o75f4amdv2fpalefbau7eou'
+    '_identity-frontend' => 'eeea0d61ce94fdffc8dedc041807fe9e7ca6c8e0c1725313227f36cd695ef1b3a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:48:\"[\"2\",\"Vfsg114KUoG4qBf4Nz7gHNRqpBhIM7uS\",2592000]\";}'
+    'advanced-backend' => 'i6ocvunvugstvfgl2kj7aefelk'
+    '_identity-backend' => 'cc300650047d19912605f934fa156853bf16c4264c599c474c4fd7aa2184ecbba:2:{i:0;s:17:\"_identity-backend\";i:1;s:48:\"[\"2\",\"Vfsg114KUoG4qBf4Nz7gHNRqpBhIM7uS\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/inventory_app/backend/web/index.php?r=site/items'
+    '__id' => '2'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/inventory_app/backend/web/index.php?r=site/users'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=h5pv6h72tepn4v3vdb6p15vsfa; _csrf-backend=7d1516ed21462ba0442d3abe49d40aedf8ea532fa71091021c0e6f69056634d1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22bHBGCPRC_hmOZ88Al1FwMWIYc3-uFnrD%22%3B%7D; _csrf-frontend=8cb272ede1bcbeda0a63bf95364d281fcbd6f93af80b020b4d817e1108289bf4a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22xz5l1GJX7g3V4WAI0b5xSguHW2l4huIQ%22%3B%7D; advanced-frontend=sg1o75f4amdv2fpalefbau7eou; _identity-frontend=eeea0d61ce94fdffc8dedc041807fe9e7ca6c8e0c1725313227f36cd695ef1b3a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A48%3A%22%5B%222%22%2C%22Vfsg114KUoG4qBf4Nz7gHNRqpBhIM7uS%22%2C2592000%5D%22%3B%7D; advanced-backend=i6ocvunvugstvfgl2kj7aefelk; _identity-backend=cc300650047d19912605f934fa156853bf16c4264c599c474c4fd7aa2184ecbba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A48%3A%22%5B%222%22%2C%22Vfsg114KUoG4qBf4Nz7gHNRqpBhIM7uS%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\PuTTY\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\xampp\\php\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\jurikaca\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\jurikaca\\AppData\\Roaming\\npm;C:\\Users\\jurikaca\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Win32) OpenSSL/1.0.2l PHP/7.1.9 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Win32) OpenSSL/1.0.2l PHP/7.1.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/inventory_app/backend/web/index.php'
+    'REMOTE_PORT' => '53025'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/inventory_app/backend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/inventory_app/backend/web/index.php'
+    'PHP_SELF' => '/inventory_app/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1513796168.931
+    'REQUEST_TIME' => 1513796168
+]
+2017-12-20 19:56:24 [::1][2][i6ocvunvugstvfgl2kj7aefelk][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined offset: 0 in C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\helpers\BaseUrl.php:99
+Stack trace:
+#0 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\helpers\BaseUrl.php(99): yii\base\ErrorHandler->handleError(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 99, Array)
+#1 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\helpers\BaseUrl.php(214): yii\helpers\BaseUrl::toRoute(Array, false)
+#2 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\helpers\BaseHtml.php(412): yii\helpers\BaseUrl::to(Array)
+#3 C:\xampp\htdocs\inventory_app\backend\views\site\users.php(46): yii\helpers\BaseHtml::a('<i class="fa fa...', Array)
+#4 [internal function]: yii\base\View->{closure}(Object(common\models\User), '3', 0, Object(yii\grid\DataColumn))
+#5 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\grid\DataColumn.php(224): call_user_func(Object(Closure), Object(common\models\User), '3', 0, Object(yii\grid\DataColumn))
+#6 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\grid\DataColumn.php(238): yii\grid\DataColumn->getDataCellValue(Object(common\models\User), '3', 0)
+#7 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\grid\Column.php(111): yii\grid\DataColumn->renderDataCellContent(Object(common\models\User), '3', 0)
+#8 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\grid\GridView.php(502): yii\grid\Column->renderDataCell(Object(common\models\User), '3', 0)
+#9 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\grid\GridView.php(471): yii\grid\GridView->renderTableRow(Object(common\models\User), '3', 0)
+#10 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\grid\GridView.php(347): yii\grid\GridView->renderTableBody()
+#11 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\widgets\BaseListView.php(160): yii\grid\GridView->renderItems()
+#12 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\grid\GridView.php(316): yii\widgets\BaseListView->renderSection('{items}')
+#13 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\widgets\BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#14 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#15 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\widgets\BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#16 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\grid\GridView.php(291): yii\widgets\BaseListView->run()
+#17 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Widget.php(140): yii\grid\GridView->run()
+#18 C:\xampp\htdocs\inventory_app\backend\views\site\users.php(49): yii\base\Widget::widget(Array)
+#19 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\View.php(332): require('C:\\xampp\\htdocs...')
+#20 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#21 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(backend\controllers\SiteController))
+#22 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('users', Array, Object(backend\controllers\SiteController))
+#23 C:\xampp\htdocs\inventory_app\backend\controllers\SiteController.php(148): yii\base\Controller->render('users', Array)
+#24 [internal function]: backend\controllers\SiteController->actionUsers()
+#25 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#26 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#27 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('users', Array)
+#28 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/users', Array)
+#29 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#30 C:\xampp\htdocs\inventory_app\backend\web\index.php(17): yii\base\Application->run()
+#31 {main}
+2017-12-20 19:56:24 [::1][2][i6ocvunvugstvfgl2kj7aefelk][info][application] $_GET = [
+    'r' => 'site/users'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'h5pv6h72tepn4v3vdb6p15vsfa'
+    '_csrf-backend' => '7d1516ed21462ba0442d3abe49d40aedf8ea532fa71091021c0e6f69056634d1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"bHBGCPRC_hmOZ88Al1FwMWIYc3-uFnrD\";}'
+    '_csrf-frontend' => '8cb272ede1bcbeda0a63bf95364d281fcbd6f93af80b020b4d817e1108289bf4a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"xz5l1GJX7g3V4WAI0b5xSguHW2l4huIQ\";}'
+    'advanced-frontend' => 'sg1o75f4amdv2fpalefbau7eou'
+    '_identity-frontend' => 'eeea0d61ce94fdffc8dedc041807fe9e7ca6c8e0c1725313227f36cd695ef1b3a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:48:\"[\"2\",\"Vfsg114KUoG4qBf4Nz7gHNRqpBhIM7uS\",2592000]\";}'
+    'advanced-backend' => 'i6ocvunvugstvfgl2kj7aefelk'
+    '_identity-backend' => 'cc300650047d19912605f934fa156853bf16c4264c599c474c4fd7aa2184ecbba:2:{i:0;s:17:\"_identity-backend\";i:1;s:48:\"[\"2\",\"Vfsg114KUoG4qBf4Nz7gHNRqpBhIM7uS\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/inventory_app/backend/web/index.php?r=site/items'
+    '__id' => '2'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=h5pv6h72tepn4v3vdb6p15vsfa; _csrf-backend=7d1516ed21462ba0442d3abe49d40aedf8ea532fa71091021c0e6f69056634d1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22bHBGCPRC_hmOZ88Al1FwMWIYc3-uFnrD%22%3B%7D; _csrf-frontend=8cb272ede1bcbeda0a63bf95364d281fcbd6f93af80b020b4d817e1108289bf4a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22xz5l1GJX7g3V4WAI0b5xSguHW2l4huIQ%22%3B%7D; advanced-frontend=sg1o75f4amdv2fpalefbau7eou; _identity-frontend=eeea0d61ce94fdffc8dedc041807fe9e7ca6c8e0c1725313227f36cd695ef1b3a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A48%3A%22%5B%222%22%2C%22Vfsg114KUoG4qBf4Nz7gHNRqpBhIM7uS%22%2C2592000%5D%22%3B%7D; advanced-backend=i6ocvunvugstvfgl2kj7aefelk; _identity-backend=cc300650047d19912605f934fa156853bf16c4264c599c474c4fd7aa2184ecbba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A48%3A%22%5B%222%22%2C%22Vfsg114KUoG4qBf4Nz7gHNRqpBhIM7uS%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\PuTTY\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\xampp\\php\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\jurikaca\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\jurikaca\\AppData\\Roaming\\npm;C:\\Users\\jurikaca\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Win32) OpenSSL/1.0.2l PHP/7.1.9 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Win32) OpenSSL/1.0.2l PHP/7.1.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/inventory_app/backend/web/index.php'
+    'REMOTE_PORT' => '53076'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site/users'
+    'REQUEST_URI' => '/inventory_app/backend/web/index.php?r=site/users'
+    'SCRIPT_NAME' => '/inventory_app/backend/web/index.php'
+    'PHP_SELF' => '/inventory_app/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1513796184.216
+    'REQUEST_TIME' => 1513796184
+]
+2017-12-20 19:56:44 [::1][2][i6ocvunvugstvfgl2kj7aefelk][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/javascript:void(0) in C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Controller.php:128
+Stack trace:
+#0 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('javascript:void...', Array)
+#1 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/javascript...', Array)
+#2 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\xampp\htdocs\inventory_app\backend\web\index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\inventory_app\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-12-20 19:56:44 [::1][2][i6ocvunvugstvfgl2kj7aefelk][info][application] $_GET = [
+    'r' => 'site/javascript:void(0)'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'h5pv6h72tepn4v3vdb6p15vsfa'
+    '_csrf-backend' => '7d1516ed21462ba0442d3abe49d40aedf8ea532fa71091021c0e6f69056634d1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"bHBGCPRC_hmOZ88Al1FwMWIYc3-uFnrD\";}'
+    '_csrf-frontend' => '8cb272ede1bcbeda0a63bf95364d281fcbd6f93af80b020b4d817e1108289bf4a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"xz5l1GJX7g3V4WAI0b5xSguHW2l4huIQ\";}'
+    'advanced-frontend' => 'sg1o75f4amdv2fpalefbau7eou'
+    '_identity-frontend' => 'eeea0d61ce94fdffc8dedc041807fe9e7ca6c8e0c1725313227f36cd695ef1b3a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:48:\"[\"2\",\"Vfsg114KUoG4qBf4Nz7gHNRqpBhIM7uS\",2592000]\";}'
+    'advanced-backend' => 'i6ocvunvugstvfgl2kj7aefelk'
+    '_identity-backend' => 'cc300650047d19912605f934fa156853bf16c4264c599c474c4fd7aa2184ecbba:2:{i:0;s:17:\"_identity-backend\";i:1;s:48:\"[\"2\",\"Vfsg114KUoG4qBf4Nz7gHNRqpBhIM7uS\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/inventory_app/backend/web/index.php?r=site/items'
+    '__id' => '2'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/inventory_app/backend/web/index.php?r=site/users'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=h5pv6h72tepn4v3vdb6p15vsfa; _csrf-backend=7d1516ed21462ba0442d3abe49d40aedf8ea532fa71091021c0e6f69056634d1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22bHBGCPRC_hmOZ88Al1FwMWIYc3-uFnrD%22%3B%7D; _csrf-frontend=8cb272ede1bcbeda0a63bf95364d281fcbd6f93af80b020b4d817e1108289bf4a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22xz5l1GJX7g3V4WAI0b5xSguHW2l4huIQ%22%3B%7D; advanced-frontend=sg1o75f4amdv2fpalefbau7eou; _identity-frontend=eeea0d61ce94fdffc8dedc041807fe9e7ca6c8e0c1725313227f36cd695ef1b3a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A48%3A%22%5B%222%22%2C%22Vfsg114KUoG4qBf4Nz7gHNRqpBhIM7uS%22%2C2592000%5D%22%3B%7D; advanced-backend=i6ocvunvugstvfgl2kj7aefelk; _identity-backend=cc300650047d19912605f934fa156853bf16c4264c599c474c4fd7aa2184ecbba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A48%3A%22%5B%222%22%2C%22Vfsg114KUoG4qBf4Nz7gHNRqpBhIM7uS%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\PuTTY\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\xampp\\php\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\jurikaca\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\jurikaca\\AppData\\Roaming\\npm;C:\\Users\\jurikaca\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Win32) OpenSSL/1.0.2l PHP/7.1.9 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Win32) OpenSSL/1.0.2l PHP/7.1.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/inventory_app/backend/web/index.php'
+    'REMOTE_PORT' => '53118'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fjavascript%3Avoid%280%29'
+    'REQUEST_URI' => '/inventory_app/backend/web/index.php?r=site%2Fjavascript%3Avoid%280%29'
+    'SCRIPT_NAME' => '/inventory_app/backend/web/index.php'
+    'PHP_SELF' => '/inventory_app/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1513796204.428
+    'REQUEST_TIME' => 1513796204
+]
+2018-01-04 19:23:10 [::1][2][aruc1kf333cr10ursggab9o26m][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: yii\web\Application::urlManagerBackend in C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Component.php:148
+Stack trace:
+#0 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\di\ServiceLocator.php(77): yii\base\Component->__get('urlManagerBacke...')
+#1 C:\xampp\htdocs\inventory_app\backend\controllers\SiteController.php(97): yii\di\ServiceLocator->__get('urlManagerBacke...')
+#2 [internal function]: backend\controllers\SiteController->actionLogin()
+#3 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('login', Array)
+#6 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/login', Array)
+#7 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\xampp\htdocs\inventory_app\backend\web\index.php(17): yii\base\Application->run()
+#9 {main}
+2018-01-04 19:23:09 [::1][2][aruc1kf333cr10ursggab9o26m][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = [
+    '_csrf-backend' => 'X9xc_bK0aNFE9w3cPYX4Ivjs3Ua9PY23bNtD6ShyQusdiWqp8OEnvTCDYO9p7Z1Nvri_CdV-3uE7rwuBYgcLuQ=='
+    'LoginForm' => [
+        'username' => 'jurikaca'
+        'password' => 'juri15'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '1fbd5a2408809715c18048d6cc9fa3867c534bb6e487a9a2915dcb8ee73ebb0ca:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"BU6TBUOlttm3TheoFTbOhCSVWtHhJuIR\";}'
+    '_csrf-frontend' => '888289cea188a97ead7285e18522b3e0f6ade1f62254d512b3a5ef2f5d577d0fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"3A2T8Y3KYIpwiLeBbcVHRE9CMOGrjd_s\";}'
+    'ci_session' => 'dhpcffvjnbch795ag3olo9qo8l7jh5k1'
+    'advanced-frontend' => 'bjen59ku3flc5bfvhi1lfe2l4r'
+    '_identity-frontend' => 'eeea0d61ce94fdffc8dedc041807fe9e7ca6c8e0c1725313227f36cd695ef1b3a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:48:\"[\"2\",\"Vfsg114KUoG4qBf4Nz7gHNRqpBhIM7uS\",2592000]\";}'
+    'advanced-backend' => 'rfemjado8knpvb7mjaqnii439v'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/inventory_app/backend/web/index.php'
+    '__id' => '2'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '240'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost:8080'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/inventory_app/backend/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_csrf-backend=1fbd5a2408809715c18048d6cc9fa3867c534bb6e487a9a2915dcb8ee73ebb0ca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22BU6TBUOlttm3TheoFTbOhCSVWtHhJuIR%22%3B%7D; _csrf-frontend=888289cea188a97ead7285e18522b3e0f6ade1f62254d512b3a5ef2f5d577d0fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%223A2T8Y3KYIpwiLeBbcVHRE9CMOGrjd_s%22%3B%7D; ci_session=dhpcffvjnbch795ag3olo9qo8l7jh5k1; advanced-frontend=bjen59ku3flc5bfvhi1lfe2l4r; _identity-frontend=eeea0d61ce94fdffc8dedc041807fe9e7ca6c8e0c1725313227f36cd695ef1b3a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A48%3A%22%5B%222%22%2C%22Vfsg114KUoG4qBf4Nz7gHNRqpBhIM7uS%22%2C2592000%5D%22%3B%7D; advanced-backend=rfemjado8knpvb7mjaqnii439v'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\PuTTY\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\xampp\\php\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\jurikaca\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\jurikaca\\AppData\\Roaming\\npm;C:\\Users\\jurikaca\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Win32) OpenSSL/1.0.2l PHP/7.1.9 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Win32) OpenSSL/1.0.2l PHP/7.1.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/inventory_app/backend/web/index.php'
+    'REMOTE_PORT' => '49735'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/inventory_app/backend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/inventory_app/backend/web/index.php'
+    'PHP_SELF' => '/inventory_app/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1515090189.831
+    'REQUEST_TIME' => 1515090189
+]
+2018-01-04 19:23:33 [::1][2][v3l995s41lobke4q3grigqfhdk][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "./../frontend/web". in C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('./../frontend/w...', Array)
+#1 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\inventory_app\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\inventory_app\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2018-01-04 19:23:33 [::1][2][v3l995s41lobke4q3grigqfhdk][info][application] $_GET = [
+    'r' => './../frontend/web'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '1fbd5a2408809715c18048d6cc9fa3867c534bb6e487a9a2915dcb8ee73ebb0ca:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"BU6TBUOlttm3TheoFTbOhCSVWtHhJuIR\";}'
+    '_csrf-frontend' => '888289cea188a97ead7285e18522b3e0f6ade1f62254d512b3a5ef2f5d577d0fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"3A2T8Y3KYIpwiLeBbcVHRE9CMOGrjd_s\";}'
+    'ci_session' => 'dhpcffvjnbch795ag3olo9qo8l7jh5k1'
+    'advanced-frontend' => 'bjen59ku3flc5bfvhi1lfe2l4r'
+    '_identity-frontend' => 'eeea0d61ce94fdffc8dedc041807fe9e7ca6c8e0c1725313227f36cd695ef1b3a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:48:\"[\"2\",\"Vfsg114KUoG4qBf4Nz7gHNRqpBhIM7uS\",2592000]\";}'
+    'advanced-backend' => 'v3l995s41lobke4q3grigqfhdk'
+    '_identity-backend' => 'cc300650047d19912605f934fa156853bf16c4264c599c474c4fd7aa2184ecbba:2:{i:0;s:17:\"_identity-backend\";i:1;s:48:\"[\"2\",\"Vfsg114KUoG4qBf4Nz7gHNRqpBhIM7uS\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/inventory_app/backend/web/index.php'
+    '__id' => '2'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/inventory_app/backend/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_csrf-backend=1fbd5a2408809715c18048d6cc9fa3867c534bb6e487a9a2915dcb8ee73ebb0ca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22BU6TBUOlttm3TheoFTbOhCSVWtHhJuIR%22%3B%7D; _csrf-frontend=888289cea188a97ead7285e18522b3e0f6ade1f62254d512b3a5ef2f5d577d0fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%223A2T8Y3KYIpwiLeBbcVHRE9CMOGrjd_s%22%3B%7D; ci_session=dhpcffvjnbch795ag3olo9qo8l7jh5k1; advanced-frontend=bjen59ku3flc5bfvhi1lfe2l4r; _identity-frontend=eeea0d61ce94fdffc8dedc041807fe9e7ca6c8e0c1725313227f36cd695ef1b3a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A48%3A%22%5B%222%22%2C%22Vfsg114KUoG4qBf4Nz7gHNRqpBhIM7uS%22%2C2592000%5D%22%3B%7D; advanced-backend=v3l995s41lobke4q3grigqfhdk; _identity-backend=cc300650047d19912605f934fa156853bf16c4264c599c474c4fd7aa2184ecbba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A48%3A%22%5B%222%22%2C%22Vfsg114KUoG4qBf4Nz7gHNRqpBhIM7uS%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\PuTTY\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\xampp\\php\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\jurikaca\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\jurikaca\\AppData\\Roaming\\npm;C:\\Users\\jurikaca\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Win32) OpenSSL/1.0.2l PHP/7.1.9 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Win32) OpenSSL/1.0.2l PHP/7.1.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/inventory_app/backend/web/index.php'
+    'REMOTE_PORT' => '49794'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=.%2F..%2Ffrontend%2Fweb'
+    'REQUEST_URI' => '/inventory_app/backend/web/index.php?r=.%2F..%2Ffrontend%2Fweb'
+    'SCRIPT_NAME' => '/inventory_app/backend/web/index.php'
+    'PHP_SELF' => '/inventory_app/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1515090213.57
+    'REQUEST_TIME' => 1515090213
+]
+2018-01-04 19:33:43 [::1][2][v3l995s41lobke4q3grigqfhdk][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "./../frontend/web". in C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('./../frontend/w...', Array)
+#1 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\inventory_app\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\xampp\htdocs\inventory_app\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\inventory_app\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2018-01-04 19:33:43 [::1][2][v3l995s41lobke4q3grigqfhdk][info][application] $_GET = [
+    'r' => './../frontend/web'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '1fbd5a2408809715c18048d6cc9fa3867c534bb6e487a9a2915dcb8ee73ebb0ca:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"BU6TBUOlttm3TheoFTbOhCSVWtHhJuIR\";}'
+    '_csrf-frontend' => '888289cea188a97ead7285e18522b3e0f6ade1f62254d512b3a5ef2f5d577d0fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"3A2T8Y3KYIpwiLeBbcVHRE9CMOGrjd_s\";}'
+    'ci_session' => 'dhpcffvjnbch795ag3olo9qo8l7jh5k1'
+    'advanced-frontend' => 'bjen59ku3flc5bfvhi1lfe2l4r'
+    '_identity-frontend' => 'eeea0d61ce94fdffc8dedc041807fe9e7ca6c8e0c1725313227f36cd695ef1b3a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:48:\"[\"2\",\"Vfsg114KUoG4qBf4Nz7gHNRqpBhIM7uS\",2592000]\";}'
+    'advanced-backend' => 'v3l995s41lobke4q3grigqfhdk'
+    '_identity-backend' => 'cc300650047d19912605f934fa156853bf16c4264c599c474c4fd7aa2184ecbba:2:{i:0;s:17:\"_identity-backend\";i:1;s:48:\"[\"2\",\"Vfsg114KUoG4qBf4Nz7gHNRqpBhIM7uS\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/inventory_app/backend/web/index.php'
+    '__id' => '2'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/inventory_app/backend/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_csrf-backend=1fbd5a2408809715c18048d6cc9fa3867c534bb6e487a9a2915dcb8ee73ebb0ca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22BU6TBUOlttm3TheoFTbOhCSVWtHhJuIR%22%3B%7D; _csrf-frontend=888289cea188a97ead7285e18522b3e0f6ade1f62254d512b3a5ef2f5d577d0fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%223A2T8Y3KYIpwiLeBbcVHRE9CMOGrjd_s%22%3B%7D; ci_session=dhpcffvjnbch795ag3olo9qo8l7jh5k1; advanced-frontend=bjen59ku3flc5bfvhi1lfe2l4r; _identity-frontend=eeea0d61ce94fdffc8dedc041807fe9e7ca6c8e0c1725313227f36cd695ef1b3a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A48%3A%22%5B%222%22%2C%22Vfsg114KUoG4qBf4Nz7gHNRqpBhIM7uS%22%2C2592000%5D%22%3B%7D; advanced-backend=v3l995s41lobke4q3grigqfhdk; _identity-backend=cc300650047d19912605f934fa156853bf16c4264c599c474c4fd7aa2184ecbba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A48%3A%22%5B%222%22%2C%22Vfsg114KUoG4qBf4Nz7gHNRqpBhIM7uS%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\PuTTY\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\xampp\\php\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\jurikaca\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\jurikaca\\AppData\\Roaming\\npm;C:\\Users\\jurikaca\\AppData\\Roaming\\Composer\\vendor\\bin;'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Win32) OpenSSL/1.0.2l PHP/7.1.9 Server at localhost Port 8080</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Win32) OpenSSL/1.0.2l PHP/7.1.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '8080'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/inventory_app/backend/web/index.php'
+    'REMOTE_PORT' => '51138'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=.%2F..%2Ffrontend%2Fweb'
+    'REQUEST_URI' => '/inventory_app/backend/web/index.php?r=.%2F..%2Ffrontend%2Fweb'
+    'SCRIPT_NAME' => '/inventory_app/backend/web/index.php'
+    'PHP_SELF' => '/inventory_app/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1515090823.711
+    'REQUEST_TIME' => 1515090823
+]

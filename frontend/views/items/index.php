@@ -48,13 +48,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 ],
                 'serial_number',
                 'price',
-                // 'weight',
                 'color',
-                // 'release_date',
-                // 'photo',
-                // 'tags',
-                // 'created_date',
-
                 ['class' => 'yii\grid\ActionColumn'],
             ],
         ]); ?>

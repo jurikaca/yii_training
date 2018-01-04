@@ -44,6 +44,12 @@ return [
             ],
         ],
         */
+        'urlManagerBackend' => [
+            'class' => 'yii\web\urlManager',
+            'enablePrettyUrl' => true,
+            'showScriptName' => false,
+            'baseUrl' => 'http://localhost:8080/inventory_app/backend/web/index.php',
+        ],
     ],
     'params' => $params,
 ];

@@ -3,6 +3,8 @@ namespace backend\controllers;
 
 use Yii;
 use common\models\Items;
+use yii\helpers\Json;
+use common\models\User;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
@@ -28,7 +30,7 @@ class SiteController extends Controller
                         'allow' => true,
                     ],
                     [
-                        'actions' => ['logout', 'index','items','users'],
+                        'actions' => ['logout', 'index','items','users','change_user_role','delete_user'],
                         'allow' => true,
                         'roles' => ['@'], // allow only authenticated users to access the following listed actions
                     ],
@@ -88,7 +90,11 @@ class SiteController extends Controller
 
         $model = new LoginForm();
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
-            return $this->goBack();
+            if(Yii::$app->user->identity->role == 'admin'){ // if user is admin
+                return $this->goBack();
+            }else{ // if user is not admin then redirect on the frontend
+                return $this->redirect(Yii::$app->urlManagerFrontend->createUrl(Yii::$app->urlManagerFrontend->baseUrl));
+            }
         } else {
             return $this->render('login', [
                 'model' => $model,
@@ -130,7 +136,55 @@ class SiteController extends Controller
 
     public function actionUsers(){
 
+        $model = new User();
+        $dataProvider = new ActiveDataProvider([
+            'query' => User::find()
+                ->limit(5),
+            'pagination' => false,
+            'sort' => [
+                'defaultOrder' => [
+                    'id' => SORT_DESC,
+                ]
+            ],
+        ]);
+
         return $this->render('users',array(
+            'dataProvider'     =>  $dataProvider
         ));
+    }
+
+    /**
+     * function to change user role
+     */
+    public function actionChange_user_role(){
+        $model = new User();
+        $model = $model->findOne(Yii::$app->request->post('userId'));
+        $new_role = Yii::$app->request->post('role');
+
+        if($new_role == 'admin' || $new_role == 'guest'){
+            $model->role = $new_role;
+            if($model->save()){
+                $result = ["status"=>"success", "msg" => 'Role successfully changed!'];
+            }else{
+                $result = ["status"=>"error", "msg" => 'An error occurred while saving user role! Please try again later.'];
+            }
+        }else{
+            $result = ["status"=>"error", "msg" => 'The role given does not exist!'];
+        }
+
+        echo Json::encode($result); die;
+    }
+
+    /**
+     * function to delete a user via ajax
+     */
+    public function actionDelete_user(){
+        if(User::findOne(Yii::$app->request->post('userId'))->delete()){
+            $result = ["status"=>"success", "msg" => 'User was successfully deleted!'];
+        }else{
+            $result = ["status"=>"error", "msg" => 'An error occurred while deleting user! Please try again later.'];
+        }
+
+        echo Json::encode($result); die;
     }
 }
