@@ -5,7 +5,7 @@ use yii\db\Migration;
 /**
  * Handles the creation of table `vendors`.
  */
-class m171214_192511_create_vendors_table extends Migration
+class m180109_000155_create_vendors_table extends Migration
 {
     /**
      * @inheritdoc
@@ -14,6 +14,8 @@ class m171214_192511_create_vendors_table extends Migration
     {
         $this->createTable('vendors', [
             'id' => $this->primaryKey(),
+            'name' => $this->string(255),
+            'logo' => $this->string(255),
         ]);
     }
 
